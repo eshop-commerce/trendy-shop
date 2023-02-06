@@ -91,9 +91,10 @@ li{
     border: none;
     text-transform: uppercase;
     display: inline-block;
-    padding: 12px 30px;
+    padding: 15px 30px;
     border-radius: 50px;
     cursor: pointer;
+    width: 200px;
   }
   .content{
     margin: 5rem;
