@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
@@ -51,3 +56,42 @@ p {
 li{
     list-style: none;
 }
+.message_form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.send_message form input {
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #444444;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .send_message form textarea {
+    height: 130px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 14px;
+    color: #444444;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    resize: none;
+  }
+  .site-btn {
+    font-size: 14px;
+    color: #ffffff;
+    background: #ca1515;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
