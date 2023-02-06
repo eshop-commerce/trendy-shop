@@ -1,12 +1,12 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
-	height: 100%;
-	font-family: "Montserrat", sans-serif;
-	-webkit-font-smoothing: antialiased;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -15,173 +15,176 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	color: #111111;
-	font-weight: 400;
-	font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #111111;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-	font-size: 70px;
+  font-size: 70px;
 }
 
 h2 {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 h3 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 h4 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 h5 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 h6 {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 p {
-	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
-	color: #666666;
-	font-weight: 400;
-	line-height: 24px;
-	margin: 0 0 15px 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 15px 0;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.message_form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.message_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .send_message form input {
-    height: 50px;
-    width: 100%;
-    padding-left: 20px;
-    font-size: 14px;
-    color: #444444;
-    border: 1px solid #e1e1e1;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  .send_message form textarea {
-    height: 130px;
-    width: 100%;
-    padding-left: 20px;
-    padding-top: 12px;
-    font-size: 14px;
-    color: #444444;
-    border: 1px solid #e1e1e1;
-    border-radius: 10px;
-    margin-bottom: 14px;
-    resize: none;
-  }
-  .site-btn {
-    font-size: 14px;
-    color: #ffffff;
-    background: #ca1515;
-    font-weight: 600;
-    border: none;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 180px;
-  }
-  .content{
-    margin: 5rem;
-    display: flex;
-    gap: 25px;
-  }
-  .contact{
-    width: 50%;
-  }
-  .map{
-    width: 50%;
-  }
-  .contact__map{
-    width: 100%;
-    
-  }
-  iframe{
-    width: 100%;
-  }
-  .set-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-  }
-  .instagram__item {
-	height: 320px;
-    width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	position: relative;
-	z-index: 1;
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444444;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.send_message form textarea {
+  height: 130px;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #444444;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  resize: none;
+}
+.site-btn {
+  font-size: 14px;
+  color: #ffffff;
+  background: #ca1515;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 180px;
+}
+.content {
+  margin: 5rem;
+  display: flex;
+  gap: 25px;
+}
+.contact {
+  width: 50%;
+}
+.map {
+  width: 50%;
+}
+.contact__map {
+  width: 100%;
+}
+iframe {
+  width: 100%;
+}
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.instagram__item {
+  height: 320px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .instagram__item:hover:after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .instagram__item:hover .instagram__text {
-	opacity: 1;
-	visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .instagram__item:after {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.9);
-	content: "";
-	opacity: 0;
-	z-index: -1;
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 .instagram__text {
-	text-align: center;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 .instagram__text i {
-	font-size: 30px;
-	color: #0d0d0d;
+  font-size: 30px;
+  color: #0d0d0d;
 }
 
 .instagram__text a {
-	font-size: 16px;
-	color: #0d0d0d;
-	font-weight: 500;
-	display: block;
-	margin-top: 10px;
+  font-size: 16px;
+  color: #0d0d0d;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
 }
-.instagram{
-    display: flex;
-    width: 100%;
-    
+.instagram {
+  display: flex;
+  width: 100%;
+}
+.ico {
+  font-size: 16px;
+  color: #ca1515;
+  margin-right: 5px;
 }
