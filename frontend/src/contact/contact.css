@@ -95,3 +95,21 @@ li{
     border-radius: 50px;
     cursor: pointer;
   }
+  .content{
+    margin: 5rem;
+    display: flex;
+    gap: 25px;
+  }
+  .contact{
+    width: 50%;
+  }
+  .map{
+    width: 50%;
+  }
+  .contact__map{
+    width: 100%;
+    
+  }
+  iframe{
+    width: 100%;
+  }
