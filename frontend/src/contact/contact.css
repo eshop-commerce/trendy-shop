@@ -227,6 +227,9 @@ iframe {
 }
 /* media queries */
 @media screen and (max-width: 990px) {
+    .instagram{
+        flex-wrap: wrap;
+      }
     .instagram__item{
         flex-wrap: wrap;
         width:33.33%;
@@ -247,9 +250,7 @@ iframe {
       .contact {
         width: 90%;
       }
-      .instagram{
-        flex-wrap: wrap;
-      }
+      
      
    
 }
