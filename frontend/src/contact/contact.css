@@ -131,6 +131,10 @@ iframe {
   background-size: cover;
   background-position: top center;
 }
+.instagram {
+    display: flex;
+    width: 100%;
+  }
 .instagram__item {
   height: 320px;
   width: 100%;
@@ -192,10 +196,6 @@ iframe {
   display: block;
   margin-top: 10px;
 }
-.instagram {
-  display: flex;
-  width: 100%;
-}
 .ico {
   font-size: 16px;
   color: #ca1515;
@@ -224,4 +224,49 @@ iframe {
 	font-weight: 500;
 	color: #888888;
 	display: inline-block;
+}
+/* media queries */
+@media screen and (max-width: 990px) {
+    .instagram__item{
+        flex-wrap: wrap;
+        width:33.33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5rem;
+    }
+    .map {
+        width: 90%;
+      }
+      .contact {
+        width: 90%;
+      }
+      .instagram{
+        flex-wrap: wrap;
+      }
+     
+   
+}
+@media screen and (max-width: 480px) {
+    .map {
+        width: 98%;
+      }
+      .contact {
+        width: 98%;
+      }
+      .instagram{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .instagram__item{
+        width: 80%;
+        
+      }
 }
