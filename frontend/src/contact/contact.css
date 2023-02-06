@@ -9,18 +9,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 0;
   color: #111111;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
 h1 {
   font-size: 70px;
 }
@@ -217,15 +215,7 @@ iframe {
 	position: relative;
 }
 
-.breadcrumb__links a:after {
-	position: absolute;
-	right: -14px;
-	top: 0;
-	content: "";
-	font-family: "FontAwesome";
-}
-
-.breadcrumb__links a i {
+.breadcrumb__links a ion-icon{
 	margin-right: 5px;
 }
 
