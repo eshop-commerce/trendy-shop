@@ -5,6 +5,7 @@
 .container{
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 .side-bar{
     background-color: black;
@@ -14,5 +15,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+}
+.main-content{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+ion-icon{
+    font-size: 3rem;
+    color: red;
+}
+.top-bar{
+    background-color: green;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+.display-cards{
+    background-color: blueviolet;
+    width: 80%;
+    height: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+.filter-search{
+    width: 80%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    margin-top: 2rem;
+}
+.filter{
+    display: flex;
+    gap: 0.5rem;
+}
+.customers-details{
+    width: 80%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.table{
+    display: flex;
+}
+.previous-next{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.table{
+    display: flex;
+    justify-content: space-between;
 }
