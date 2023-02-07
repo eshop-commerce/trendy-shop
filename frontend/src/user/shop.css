@@ -5,6 +5,10 @@
 	padding-top: 70px;
 	padding-bottom: 80px;
 }
+.content{
+    display: flex;
+    gap: 10px;
+}
 .categories{
     margin-top: 50px;
     width: 20%;
