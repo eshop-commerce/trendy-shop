@@ -6,52 +6,106 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    background-color: whitesmoke;
 }
 .side-bar{
     background-color: black;
     width: 15%;
-    height: 100%;
+    height: 80%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.top-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .main-content{
     width: 100%;
     height: 100%;
     /* border: 2px solid red; */
 }
-ion-icon{
-    font-size: 3rem;
-    color: red;
-}
 .top-bar{
-    background-color: green;
+    background-color: white;
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 8.5%;
+    height: 4rem;
+    padding: 0.5rem;
+}
+.search-profile-pic{
+    display: flex;
+    gap: 2rem;
+}
+.search-profile-pic input{
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+.search-profile-pic ion-icon{
+    font-size: 2rem;
+    color: aqua;
+    margin-right: 4rem;
 }
 .display-cards{
-    background-color: blueviolet;
     width: 80%;
     height: 13%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: 15%;
     margin-top: 2rem;
+    
+}
+.display-cards ion-icon{
+    font-size: 3rem;
+    color: #362FD9;
+}
+.products-card, .users-card, .orders-card, .total-sales-card{
+    /* border: 2px solid red; */
+    padding: 0.5rem;
+    gap: 10px;
+    height: 100%;
+    width: 16%;
+    display: flex;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+.products-card:hover, .users-card:hover, .orders-card:hover, .total-sales-card:hover{
+    background-color: grey;
+    cursor:pointer;
 }
 .filter-search{
     width: 80%;
     margin-left: 15%;
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
     margin-top: 2rem;
+}
+.search input{
+    border: none;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    
 }
 .filter{
     display: flex;
     gap: 0.5rem;
+    width: 10%;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.filter ion-icon{
+    font-size: 1rem;
+    color: black;
 }
 .customers-details{
     width: 80%;
@@ -66,8 +120,22 @@ ion-icon{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 0.5rem;
 }
 .table{
     display: flex;
     justify-content: space-between;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+.table ion-icon{
+    font-size: 1rem;
+    color: black;
+}
+.previous-next button{
+    border: none;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
