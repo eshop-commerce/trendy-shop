@@ -1,6 +1,10 @@
-b*{
+*{
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+}
+body{
+	/* overflow-x:hidden ; */
 }
 .navbar_items{
 	display: flex;
@@ -11,6 +15,7 @@ b*{
   /* Header */
 
  .header {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	height: 70px;
@@ -144,33 +149,54 @@ b*{
     align-content: center;
     height: 90%;
     width: 80%;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
-    "one two three"
-    "one four five"
+    "one one two three"
+    "one one four five"
    ;
    align-items: center;
    gap: 5px;
    /* margin-top: 10px; */
    /* padding: 10px; */
-   padding-left: 200px;
+   /* padding-left: 200px; */
 }
 .one, .two, .three,.four, .five{
 	display: flex;
 	flex-direction: row;
 }
 .one{
-	height: 500px;
+	height: 600px;
 	width: 600px;
+	grid-area: one;
+}
+.two{
+	grid-area: two;
+}
+.three{
+	grid-area: three;
+}
+.four{
+	grid-area: four;
+}
+.five{
+	grid-area: five;
 }
 .four, .two, .three, .five{
 	height: 300px;
-	width: 300px;
+	width: 320px;
 }
 .categories__text{
 	float: center;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+}
+
+/* banner */
+.container-banner{
+	overflow-x: hidden;
+	width: 100%;
+	height: 100rem;
+	background-repeat: no-repeat;
 }
