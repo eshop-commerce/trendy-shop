@@ -139,3 +139,28 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
+.add-new-product{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 40%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.add-new-product input, select{
+    width: 100%;
+    height: 1.8rem;
+}
+.add-new-product button{
+    border: none;
+    padding: 0.5rem;
+    margin-left: 40%;
+    border-radius: 2px
+}
+.add-new-product button:hover{
+    background-color: aqua;
+}
+
