@@ -232,3 +232,17 @@ body{
 	margin-right: 3rem;
 	justify-content: space-evenly;
 }
+
+
+/* product */
+ .property__gallery{ 
+	height: 500px;
+    width: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
