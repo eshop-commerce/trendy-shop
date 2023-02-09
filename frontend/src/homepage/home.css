@@ -147,8 +147,8 @@ body{
 .categories{
 	display: grid;
     align-content: center;
-    height: 90%;
-    width: 80%;
+    /* height: 90%; */
+    /* width: 80%; */
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
@@ -173,6 +173,9 @@ body{
 	height: 600px;
 	width: 600px;
 	grid-area: one;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 .one .categories__text{
 	justify-content: space-between;
@@ -185,19 +188,27 @@ body{
 }
 .two{
 	grid-area: two;
+
 }
 .three{
 	grid-area: three;
+
 }
 .four{
 	grid-area: four;
+
+
 }
 .five{
 	grid-area: five;
+
 }
 .four, .two, .three, .five{
 	height: 300px;
 	width: 320px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 .categories__text{
 	/* float: center; */
@@ -232,17 +243,47 @@ body{
 	margin-right: 3rem;
 	justify-content: space-evenly;
 }
-
+li{
+	list-style: none;
+}
 
 /* product */
  .property__gallery{ 
-	height: 500px;
-    width: 600px;
+	/* height: 500px;
+    width: 600px; */
     border: 1px solid black;
     display: flex;
-    flex-flow: row nowrap;
-    /* flex-direction: row; */
+	flex-wrap: wrap;
+    /* flex-flow: row; */
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
     gap: 4px;
 }
+
+
+/* trend item */
+.trendy__content{
+	width: 500px;
+	/* display */
+	overflow: hidden;
+	display: block;
+	
+}
+.trendy_section{
+   width: 500px;
+}
+.trend__item{
+	display: flex;
+	flex-direction: column;
+    
+}
+.product__item__pic{
+	height: 360px;
+	position: relative;
+	overflow: hidden;
+}
+.sec_categories{
+	padding-bottom: 5rem;
+}
+	
