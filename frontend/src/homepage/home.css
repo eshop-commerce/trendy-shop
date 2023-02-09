@@ -310,3 +310,27 @@ li{
 	display: flex;
 	flex-direction: row;
 }
+
+/* discount */
+.discount__text__title h2 {
+    font-size: 60px;
+    color: #ca1515;
+    font-family: "Cookie", cursive;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+.discount__text__title h5 {
+    color: #ca1515;
+    font-weight: 700;
+}
+
+.discount__text__title span {
+    font-size: 12px;
+    color: #111111;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.discount__countdown {
+    text-align: center;
+    margin-bottom: 10px;
+}
