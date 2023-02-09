@@ -263,27 +263,50 @@ li{
 
 
 /* trend item */
-.trendy__content{
-	width: 500px;
-	/* display */
-	overflow: hidden;
-	display: block;
-	
-}
 .trendy_section{
-   width: 500px;
+	padding: 20px 20px 20px;
 }
 .trend__item{
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+
+.trend__item{
+	display: flex;
+	flex-direction: column;
     
+}
+.trend__item__text {
+    overflow: hidden;
 }
 .product__item__pic{
 	height: 360px;
 	position: relative;
 	overflow: hidden;
 }
+.trend__item__text h6 {
+    font-size: 14px;
+    color: #111111;
+    margin-bottom: 5px;
+}
 .sec_categories{
 	padding-bottom: 5rem;
 }
 	
+/* service */
+.services__item{
+	gap: 10px;
+}
+.fa{
+	color: yellow;
+}
+.fa-car, .fa-money, .fa-service, .fa-support, .fa-headphones  {
+	color: red;
+	font-size: 40px;
+}
+.services__item{
+	display: flex;
+	flex-direction: row;
+}
