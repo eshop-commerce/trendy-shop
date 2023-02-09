@@ -220,10 +220,17 @@ body{
 
 /* banner */
 .container-banner{
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
+	/* width: 100%; */
+	/* height: 100rem; */
+	/* background-repeat: no-repeat; */
 	width: 100%;
-	height: 100rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 /* product section */
@@ -312,6 +319,12 @@ li{
 }
 
 /* discount */
+.discount__text__title{
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 60px;
+}
 .discount__text__title h2 {
     font-size: 60px;
     color: #ca1515;
@@ -349,3 +362,236 @@ li{
 	display: flex;
 	flex-direction: row;
 }
+
+/* banner */
+
+.banner__text a{
+	font-size: 14px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding: 0 0 3px;
+	display: inline-block;
+}
+
+/* footer */
+.footer__about p{
+	margin-bottom: 20px;
+	font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #666666;
+    font-weight: 400;
+	width: 300px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+.footer__widget {
+    margin-bottom: 30px;
+}
+.footer__widget ul li {
+    list-style: none;
+	color: #666666;
+
+	/* display: list-item; */
+    /* text-align: -webkit-match-parent; */
+}
+.footer__widget h6 {
+    color: #111111;
+	font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.footer__newslatter h6{
+	color: #111111;
+	font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* corousel */
+.banner {
+	height: 500px;
+}
+
+.banner__text span {
+	font-size: 18px;
+	color: #ca1515;
+	text-transform: uppercase;
+}
+
+.banner__text h1 {
+	font-size: 40px;
+	color: #111111;
+	font-family: "Cookie", cursive;
+	margin-bottom: 15px;
+}
+
+.banner__text a {
+	font-size: 14px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding: 0 0 3px;
+	display: inline-block;
+}
+
+.banner__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
+
+.banner__slider {
+	text-align: center;
+	padding: 150px 0 0;
+}
+
+.banner__slider.owl-carousel .owl-dots {
+	position: absolute;
+	left: 0;
+	top: 430px;
+	width: 100%;
+	text-align: center;
+}
+
+.banner__slider.owl-carousel .owl-dots button {
+	height: 12px;
+	width: 12px;
+	background: #a1a1a1;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.banner__slider.owl-carousel .owl-dots button.active {
+	background: #ca1515;
+}
+
+.banner__slider.owl-carousel .owl-dots button:last-child {
+	margin-right: 0;
+}
+
+/* instagram */
+.instagram {
+	display: flex;
+	width: 100%;
+  }
+  .instagram__item {
+  height: 320px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  }
+  
+  .instagram__item:hover:after {
+  opacity: 1;
+  }
+  
+  .instagram__item:hover .instagram__text {
+  opacity: 1;
+  visibility: visible;
+  }
+  
+  .instagram__item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  }
+  
+  .instagram__text {
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  }
+  
+  .instagram__text i {
+  font-size: 30px;
+  color: #0d0d0d;
+  }
+  
+  .instagram__text a {
+  font-size: 16px;
+  color: #0d0d0d;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  }
+  
+  /* media queries */
+  @media screen and (max-width: 990px) {
+	.instagram{
+		flex-wrap: wrap;
+	  }
+	.instagram__item{
+		flex-wrap: wrap;
+		width:33.33%;
+	}
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+  
+	.content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2.5rem;
+	}
+	.map {
+		width: 90%;
+	  }
+	  .contact {
+		width: 90%;
+	  }
+	  
+	 
+   
+  }
+  @media screen and (max-width: 480px) {
+	.map {
+		width: 98%;
+	  }
+	  .contact {
+		width: 98%;
+	  }
+	  .instagram{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .instagram__item{
+		width: 80%;
+		
+	  }
+  }
