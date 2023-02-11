@@ -87,8 +87,7 @@
 margin-top: 10px;
 	display: grid;
     align-content: center;
-    /* height: 90%; */
-    /* width: 80%; */
+
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
@@ -119,8 +118,8 @@ margin-top: 10px;
 }
 
 .one .categories__text >p >h1{
-	
-	width: 20em;
+	font-family: "Cookie", cursive;
+	/* width: 20em; */
 	color: rgba(0, 0, 0, 0.753);
 }
 .two{
