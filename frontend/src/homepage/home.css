@@ -145,6 +145,8 @@ body{
 
 /* categories */
 .categories{
+	overflow: hidden;
+margin-top: 10px;
 	display: grid;
     align-content: center;
     /* height: 90%; */
@@ -156,8 +158,11 @@ body{
     "one one four five"
    ;
    align-items: center;
-   gap: 5px;
+   gap: 10px;
 }
+.categories .container-fluid {
+	padding-right: 5px;
+  }
 .one, .two, .three,.four, .five{
 	display: flex;
 	flex-direction: row;
@@ -170,8 +175,8 @@ body{
 	align-items: center;
 }
 .one{
-	height: 600px;
-	width: 600px;
+	height: 100%;
+	width: 630px;
 	grid-area: one;
 	background-repeat: no-repeat;
     background-size: cover;
