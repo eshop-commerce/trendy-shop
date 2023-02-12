@@ -1,7 +1,7 @@
 CREATE OR ALTER PROCEDURE deleteProduct(@id VARCHAR(100))
 AS
 BEGIN
-DELETE FROM productsTable WHERE Id=@id
+UPDATE productsTable SET isDeleted = 1 WHERE Id=@id
 END
 GO
 

@@ -1,13 +1,13 @@
-// import { Router } from "express";
-// import { getProducts, getOneProduct, addProduct, updateProduct } from "../controllers/products";
-// // import { VerifyToken } from "../Middlewares/VerifyToken";
+import { Router } from "express";
+import { } from "../controllers/products";
+import { VerifyToken } from "../Middlewares/VerifyToken";
 
 
 
-// const authrouter =Router()
+const authrouter =Router()
 
 // authrouter.post('/register',RegisterUser)
 // authrouter.post('/login', loginUser)
-// authrouter.get('/home',VerifyToken, Homepage)//protected Route
+authrouter.get('/products',VerifyToken)//protected Route
 
-// export default authrouter
+export default authrouter

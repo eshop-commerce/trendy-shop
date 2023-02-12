@@ -11,7 +11,7 @@ interface ExtendedRequest extends Request{
 //Get Products
 export const getProducts:RequestHandler=async (req,res)=>{
    try {
-      const products:Product[] = await (await _db.exec('getProducts')).recordset
+      const products:Product[]= await (await _db.exec('getProducts')).recordset
      res.status(200).json(products)
    } catch (error) {
     res.status(500).json(error)
@@ -39,12 +39,16 @@ try {
   try {
     const id =uid()
     const {Product_name,Product_price,Category_name}= req.body
-    
-    console.log(req.body);
-    _db.exec('InsertOrUpdate', 
-    {id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name})
+    if(Product_name && Product_price && Category_name){
+      _db.exec('InsertOrUpdate', 
+      {id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name})
+      return  res.status(201).json({message:'Product Added'})
 
-   return  res.status(201).json({message:'Product Added'})
+    }else{
+      return  res.status(400).json({message:'All fields should contain a value'})
+
+    }
+
   } 
   catch (error:any) {
      return res.status(500).json(error.message)
@@ -91,3 +95,31 @@ export const deleteProduct=async(req:ExtendedRequest, res:Response)=>{
     res.status(500).json(error.message)
   }
 }
+
+
+//Add product to wishlist
+export const addProductToWishlist:RequestHandler =async (req,res) => {
+  try {
+    const {Product_name,Product_price,Category_name}= req.body
+    const product:Product= await (await _db.exec('getProductsById',{id:req.params.id})).recordset[0]
+    if(product){
+      await _db.exec('addWishlist',{id:req.params.id})
+    return res.status(200).json({message:'Product added to wishlist'})
+    }
+return res.status(404).json({error:'Product Not Found'}) 
+  } catch (error) {
+    res.status(500).json(error)
+  }
+}
+
+//Get products in wishlist
+export const getProductsWishlist:RequestHandler = async (req,res)=>{
+  try {
+     const products:Product[] = await (await _db.exec('productsWishlist')).recordset
+    res.status(200).json(products)
+  } catch (error) {
+   res.status(500).json(error)
+  }
+
+}
+
