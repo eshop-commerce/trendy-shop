@@ -557,16 +557,7 @@ anything >p{
 
 
 /* footer */
-.footer__about p{
-	margin-bottom: 20px;
-	font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: #666666;
-    font-weight: 400;
-	width: 300px;
-    line-height: 24px;
-    margin: 0 0 15px 0;
-}
+
 .footer__logo {
     margin-bottom: 20px;
 }

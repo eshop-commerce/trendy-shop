@@ -5,87 +5,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="../homepage/home.css">
         <link rel="stylesheet" href="../all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
         <title>Trendy shop</title>
     </head>
 
     <body>
+      <!-- Header Section Begin -->
+      <div class="header">
+
+        <div class="navbar_items">
+            <div class="header__logo">
+                <a href="../homepage/home.html"><img src="../assets/logo.png" alt=""></a>
+            </div>
+            <div class="navigation">
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="../homepage/home.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="../user/shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../Orders_Page/Orders.html">MY ORDERS</a>
+                        </li>
+                        <li>
+                            <a href="../contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right__auth">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+                <ul class="header__right__widget">
+                    <li>
+                        <span class="icon_search search-switch">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_heart_alt">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </span>
+                            <div class="tip">2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_bag_alt">
+                                <ion-icon name="bag-remove-outline"></ion-icon>
+                            </span>
+                            <div class="tip">2</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="breadcrumb__links">
+            <a href="../homepage/home.html">
+                <ion-icon name="home"></ion-icon>
+                Home
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <span>Orders</span>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
         <div
             class="container">
-            <!-- Header Section Begin -->
-            <div class="header">
-
-                <div class="navbar_items">
-                    <div class="header__logo">
-                        <a href="../homepage/home.html"><img src="../assets/logo.png" alt=""></a>
-                    </div>
-                    <div class="navigation">
-                        <nav class="header__menu">
-                            <ul>
-                                <li>
-                                    <a href="./index.html">Home</a>
-                                </li>
-                                <li class="active">
-                                    <a href="../user/shop.html">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="../Orders_Page/Orders.html">MY ORDERS</a>
-                                </li>
-                                <li>
-                                    <a href="../contact/contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="header__right">
-                        <div class="header__right__auth">
-                            <a href="#">Login</a>
-                            <a href="#">Register</a>
-                        </div>
-                        <ul class="header__right__widget">
-                            <li>
-                                <span class="icon_search search-switch">
-                                    <ion-icon name="search-outline"></ion-icon>
-                                </span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon_heart_alt">
-                                        <ion-icon name="heart-outline"></ion-icon>
-                                    </span>
-                                    <div class="tip">2</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon_bag_alt">
-                                        <ion-icon name="bag-remove-outline"></ion-icon>
-                                    </span>
-                                    <div class="tip">2</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Header Section End -->
-
-            <!-- Breadcrumb Begin -->
-            <div class="breadcrumb-option">
-                <div class="breadcrumb__links">
-                    <a href="../homepage/home.html">
-                        <ion-icon name="home"></ion-icon>
-                        Home
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </a>
-                    <span>Orders</span>
-                </div>
-            </div>
-            <!-- Breadcrumb End -->
+            
             <div
                 class="content" style="margin-top: 3rem;">
                 <!-- Section 1 start -->
@@ -136,6 +138,52 @@
 
             </div>
         </div>
+
+         <!-- Instagram Begin -->
+         <div class="instagram" style="margin-top: 70px;">
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-1.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-2.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-3.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-4.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-5.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-6.jpg)">
+              <div class="instagram__text">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#">@ trendy-shop</a>
+              </div>
+          </div>
+
+      </div>
+</div>
 
         <!-- Footer Section Begin -->
         <footer class="footer">
@@ -208,7 +256,7 @@
                                 All rights reserved | This template is made with
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                                 by
-                                <a href="https://colorlib.com" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
+                                <a href="#" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
                             </p>
                         </div>
                     </div>
