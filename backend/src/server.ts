@@ -13,6 +13,8 @@ app.use('/products', router)
 // app.use('/auth',authrouter)
 
 
+app.use('/UserCart',router)
+
 app.listen(4000,()=>{
 console.log("Running ...");
 
