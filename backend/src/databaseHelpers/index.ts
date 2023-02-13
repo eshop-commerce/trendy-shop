@@ -1,6 +1,6 @@
 import { object } from 'joi';
 import mssql from 'mssql'
-import { sqlConfig } from '../config'
+import { sqlConfig } from '../Config'
 export class DatabaseHelper {
 private pool :Promise<mssql.ConnectionPool>
     constructor(){
