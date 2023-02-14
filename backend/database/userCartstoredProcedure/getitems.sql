@@ -1,0 +1,7 @@
+CREATE
+OR ALTER PROCEDURE getItems AS 
+BEGIN
+SELECT *
+FROM userCart
+END
+

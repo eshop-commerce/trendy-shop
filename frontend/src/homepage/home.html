@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Trendy Shop</title>
+        <link rel="stylesheet" href="./home.css">
+        <link rel="stylesheet" href="../all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header Section Begin -->
+        <div class="header">
+
+            <div class="navbar_items">
+                <div class="header__logo">
+                    <a href="../homepage/home.html"><img src="../assets/logo.png" alt=""></a>
+                </div>
+                <div class="navigation">
+                    <nav class="header__menu">
+                        <ul>
+                            <li>
+                                <a href="../homepage/home.html">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="../user/shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a href="../Orders_Page/Orders.html">MY ORDERS</a>
+                            </li>
+                            <li>
+                                <a href="../contact/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__right">
+                    <div class="header__right__auth">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+                    <ul class="header__right__widget">
+                        <li>
+                            <span class="icon_search search-switch">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon_heart_alt">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </span>
+                                <div class="tip">2</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon_bag_alt">
+                                    <ion-icon name="bag-remove-outline"></ion-icon>
+                                </span>
+                                <div class="tip">2</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Categories Section Begin -->
+        <section class="sec_categories">
+            <div class="container-luid">
+                <div class="categories">
+                    <div class="one" style="background-image: url(../assets/categories/category-1.jpg );">
+                        <div class="categories__text">
+                            <h1>Women’s fashion</h1>
+                            <p style="padding-right: 70px;">Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
+                                                                                                                        edolore magna aliquapendisse ultrices gravida.</p>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="two" style="background-image: url(../assets/categories/category-2.jpg );">
+                        <div class="categories__text">
+                            <h4>Men’s fashion</h4>
+                            <p>358 items</p>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="three" style="background-image: url(../assets/categories/category-3.jpg );">
+                        <div class="categories__text">
+                            <h4>Kid’s fashion</h4>
+                            <p>273 items</p>
+                            <a href="#">Shop now</a>
+                        </div>
+
+                    </div>
+                    <div class="four" style="background-image: url(../assets/categories/category-4.jpg );">
+                        <div class="categories__text">
+                            <h4>Cosmetics</h4>
+                            <p>159 items</p>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="five" style="background-image: url(../assets/categories/category-5.jpg );">
+                        <div class="categories__text">
+                            <h4>Accessories</h4>
+                            <p>792 items</p>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Section End -->
+
+        <!-- Product Section Begin -->
+        <section class="product spad">
+            <div class="navbar_items">
+                <div class="section-title">
+                    <h4>New product</h4>
+                </div>
+                <div class="navigation">
+                    <nav class="header__menu">
+                        <ul class="filter__controls">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".women">Women’s</li>
+                            <li data-filter=".men">Men’s</li>
+                            <li data-filter=".kid">Kid’s</li>
+                            <li data-filter=".accessories">Accessories</li>
+                            <li data-filter=".cosmetic">Cosmetics</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><br/>
+            <div class="items">
+
+                <div class="product__item">
+                    <div class="product__item__pic ">
+                        <img src="../assets/shop/shop-1.jpg" alt="item">
+                        <div class="label new">New</div>
+                        <ul class="product__hover">
+
+                            <li>
+                                <a class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- <li><img src="../assets/shop/shop-1.jpg" alt=""></li> -->
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Furry hooded parka</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-2.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-2.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Flowy striped skirt</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0</div>
+                    </div>
+
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-3.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-3.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Croc-effect bag</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-4.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-4.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Dark wash Xavi jeans</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item sale">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-5.jpg" alt="item">
+                        <div class="label">Sale</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-5.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Ankle-cuff sandals</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0
+                            <span>$ 59.0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-6.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-6.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Contrasting sunglasses</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-8.jpg" alt="item">
+                        <div class="label stockout stockblue">Out Of Stock</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-8.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Cotton T-Shirt</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item sale">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-9.jpg" alt="item">
+                        <div class="label">Sale</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-9.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Water resistant zips backpack</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0
+                            <span>$ 59.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- </div>
+                    
+                        </div> -->
+        </section>
+        <!-- Product Section End -->
+        <!-- Banner Section Begin -->
+        <sectionclass="bannerset-bg">
+
+            <div class="container-banner" style="background-image: url(../assets/banner/banner-1.jpg );">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-left: 10%; padding-right: 10%;">
+                    <div class="immortal">
+                        <div class=" carousel-inner"  >
+                            <div class="item active" >
+                                <!-- <img src="../assets/shop/jacket.jpeg" alt="" style="width: 30%; height: 30%;"> -->
+                                <div class="banner__text">
+                                    <span>The Chloe Collection</span>
+                                    <h1>The Project Jacket</h1>
+                                    <a href="#">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="item" >
+                                <!-- <img src="../assets/shop/computer1.jpeg" alt="" style="width: 30%; height: 30%;"> -->
+                                <div class="banner__text">
+                                    <span>The Trendy Collection</span>
+                                    <h1>Computer Accessories now Available</h1>
+                                    <a href="#">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="item" >
+                                <!-- <img src="../assets/shop/shop-8.jpg" alt="" style="width: 30%; height: 30%;"> -->
+                                <div class="banner__text">
+                                    <span>The Trendy Collection</span>
+                                    <h1>New Stock Available</h1>
+                                    <a href="#">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section End -->
+        
+        <!-- Trend Section Begin -->
+        <section class="trend_spad">
+            <div class="row">
+                <div class="trendy_section">
+                    <div class="section-title">
+                        <h4>Hot Trend</h4>
+                    </div>
+                    <div class="trend__content">
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/ht-1.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Chain bucket bag</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/ht-2.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Pendant earrings</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/ht-3.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Cotton T-Shirt</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trendy_section">
+                    <div class="section-title">
+                        <h4>Best seller</h4>
+                    </div>
+                    <div class="trend__content">
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/bs-1.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Cotton T-Shirt</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/bs-2.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Zip-pockets pebbled tote
+                                    <br/>briefcase</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/bs-3.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Round leather bag</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trendy_section">
+                    <div class="section-title">
+                        <h4>Feature</h4>
+                    </div>
+                    <div class="trend__content">
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/f-1.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Bow wrap skirt</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/f-2.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Metallic earrings</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                        <div class="trend__item">
+                            <div class="trend__item__pic">
+                                <img src="../assets/trend/f-3.jpg" alt="">
+                            </div>
+                            <div class="trend__item__text">
+                                <h6>Flap cross-body bag</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="product__price">$ 59.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trend Section End -->
+
+        <!-- Discount Section Begin -->
+        <section class="discount">
+            <div class="container_count">
+                <div class="row">
+                    <div class="column_discount">
+                        <div class="discount__pic">
+                            <img src="../assets/discount.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="discounted">
+                        <div class="discount__text">
+                            <div class="discount__text__title">
+                                <span>Discount</span>
+                                <h2>Summer 2023</h2>
+                                <h5>
+                                    <span>Sale</span>
+                                    50%</h5>
+                            </div>
+                            <div class="discount__countdown" id="countdown-time">
+                                <div class="countdown__item">
+                                    <div class="span_count">
+                                        <span>22</span>
+                                    </div>
+                                    <div class="p_count">
+                                        <p>Days</p>
+                                    </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="span_count">
+                                        <span>18</span>
+                                    </div>
+                                    <div class="p_count">
+                                        <p>Hour</p>
+                                    </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="span_count">
+                                        <span>46</span>
+                                    </div>
+                                    <div class="p_count">
+                                        <p>Min</p>
+                                    </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="span_count">
+                                        <span>05</span>
+                                    </div>
+                                    <div class="p_count">
+                                        <p>Sec</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Discount Section End -->
+        <!-- Services Section Begin -->
+        <section class="services spad">
+            <div class="container">
+                <div class="row">
+                    <div class="service">
+                        <div class="services__item">
+                            <div class="fa_service">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <div class="anything">
+                                <h6>Free Shipping</h6>
+                                <p>For all oder over $99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="services__item">
+                            <div class="fa_service">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="anything">
+                                <h6>Money Back Guarantee</h6>
+                                <p>If good have Problems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="services__item">
+                            <div class="fa_service">
+                                <i class="fa fa-support"></i>
+                            </div>
+                            <div class="anything">
+                                <h6>Online Support 24/7</h6>
+                                <p>Dedicated support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="services__item">
+                            <div class="fa_service">
+                                <i class="fa fa-headphones"></i>
+                            </div>
+                            <div class="anything">
+                                <h6>Payment Secure</h6>
+                                <p>100% secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
+        <!-- Instagram Begin -->
+        <div
+            class="insta_messages">
+            <!-- Instagram Begin -->
+            <div class="instagram">
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-1.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-2.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-3.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-4.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-5.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+                <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-6.jpg)">
+                    <div class="instagram__text">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <a href="#">@ trendy-shop</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Instagram End --><!-- Footer Section Begin --><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="../assets/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                                            cilisis.</p>
+                        <div class="footer__payment">
+                            <a href="#"><img src="../assets/payment/payment-1.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-2.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-3.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-4.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-5.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer__widget">
+                        <h6>Quick links</h6>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <h6>Account</h6>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders Tracking</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__newslatter">
+                        <h6>NEWSLETTER</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__social">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="row_main_foot">
+                    <div class="main_foot">
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved | This project is made with
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                by
+                                <a href="#" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Section End -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script src="../../dist/carousel.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </body>
+    </body>
+</html>

@@ -1,22 +1,15 @@
-<!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <link rel="stylesheet" href="../homepage/home.css">
+        <title>Trendy Shop</title>
+        <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="../all.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-        <title>Trendy shop</title>
     </head>
-
     <body>
-      <!-- Header Section Begin -->
+        <div class="container">
+             <!-- Header Section Begin -->
       <div class="header">
 
         <div class="navbar_items">
@@ -78,117 +71,109 @@
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option">
         <div class="breadcrumb__links">
-            <a href="../homepage/home.html">
-                <ion-icon name="home"></ion-icon>
-                Home
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </a>
-            <span>Orders</span>
+            <a href="../homepage/home.html"><ion-icon name="home"></ion-icon> Home <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <span>Contact</span>
         </div>
     </div>
     <!-- Breadcrumb End -->
-        <div
-            class="container">
-            
-            <div
-                class="content" style="margin-top: 3rem;">
-                <!-- Section 1 start -->
-                <div class="section-1">
-                    <div class="sub-section-1">
-                        <h2>Order</h2>
-                        <p>28 orders found</p>
+            <div class="content">
+                <div class="contact">
+                    <div class="contact_info">
+                        <!-- contact info -->
+                        <h5>Contact info</h5>
+                        <ul>
+                            <li>
+                                <h6>
+                                    <ion-icon class="ico" name="location"></ion-icon>
+                                    Address</h6>
+                                <p>160 Pennsylvania Ave NW, Washington, Castle, PA 16101-5161</p>
+                            </li>
+                            <li>
+                                <h6>
+                                    <ion-icon class="ico" name="call"></ion-icon>
+                                    Phone</h6>
+                                <p>
+                                    <span>125-711-811</span>
+                                    <span>125-668-886</span>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>
+                                    <ion-icon class="ico" name="headset"></ion-icon>
+                                    Support</h6>
+                                <p>Support.photography@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div><br>
+
+                    <!-- messages form -->
+                    <div class="send_message">
+                        <h5>Send Message</h5><br>
+                        <form class="message_form" action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Website">
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit" class="site-btn">Send Message</button>
+                        </form>
                     </div>
-                    <div class="sub-section-2">
-                        <ion-icon name="notifications-outline"></ion-icon>
-                        <ion-icon name="search"></ion-icon>
-                        <div class="ac-profile">
-                            <img src="https://wallpapers.com/images/hd/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg" alt="profile">
-                            <select name="select" id="select">Hello</select>
+                </div>
+
+                <div class="map">
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127670.42232412015!2d36.88266063602857!3d-0.4399544712879931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18285dfed09e0ebf%3A0x829716f702f65e9e!2sNyeri!5e0!3m2!1sen!2ske!4v1675710218679!5m2!1sen!2ske" height="780" style="border:0" allowfullscreen=""></iframe>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Section End -->
+             <!-- Instagram Begin -->
+                <div class="instagram">
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-1.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
                         </div>
                     </div>
-                </div>
-                <!-- Section 1 end -->
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-2.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
 
-                <div class="section-2">
-                    <div class="orders-nav">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html" class="current-page">All orders</a></li>
-                                <li><a href="about _me.html">Dispatch</a></li>
-                                <li><a href="recent-posts.html">Pending</a></li>
-                                <li><a href="recent-posts.html">Completed</a></li>
-                            </ul>
-                        </nav>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
                     </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-3.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-4.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-5.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-6.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="table-orders">
-                    <table class="table table-striped">
-                        <tr class="bg-info">
-                            <th data-column="id" data-order="desc">ID &#9660</th>
-                            <th data-column="name">Name</th>
-                            <th data-column="address">Address</th>
-                            <th data-column="date" data-order="desc">Date &#9660</th>
-                            <th data-column="price" data-order="desc">Price &#9660</th>
-                            <th data-column="status">Status</th>
-                            <th data-column="action">Action</th>
-                        </tr>
-
-                        <tbody id="myTable"></tbody>
-                    </table>
-                </div>
-
-
-            </div>
         </div>
 
-         <!-- Instagram Begin -->
-         <div class="instagram" style="margin-top: 70px;">
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-1.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-2.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-3.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-4.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-5.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-          <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-6.jpg)">
-              <div class="instagram__text">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <a href="#">@ trendy-shop</a>
-              </div>
-          </div>
-
-      </div>
-</div>
-
-        <!-- Footer Section Begin -->
-        <footer class="footer">
+        <!-- Footer Section Begin --><footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer__about">
@@ -196,7 +181,7 @@
                             <a href="./index.html"><img src="../assets/logo.png" alt=""></a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                          cilisis.</p>
+                                                                            cilisis.</p>
                         <div class="footer__payment">
                             <a href="#"><img src="../assets/payment/payment-1.png" alt=""></a>
                             <a href="#"><img src="../assets/payment/payment-2.png" alt=""></a>
@@ -255,7 +240,7 @@
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
-                                All rights reserved | This template is made with
+                                All rights reserved | This project is made with
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                                 by
                                 <a href="#" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
@@ -265,11 +250,7 @@
                 </div>
             </footer>
             <!-- Footer Section End -->
-
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="./app.js"></script>
-        </body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
