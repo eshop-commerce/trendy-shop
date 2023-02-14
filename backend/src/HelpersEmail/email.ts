@@ -15,7 +15,7 @@ let config ={
     port:587,
     auth:{
         user:process.env.EMAIL,
-        pass:process.env.PASSWORD
+        pass:process.env.EMAILPASSWORD
     }
 }
 

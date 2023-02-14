@@ -9,7 +9,7 @@ import sendWelcomeEmail from './EmailService';
 app.use(cors())
 app.use(json()) //adds a body to the Request
 
-cron.schedule('*/100000 * 3* * * *', async() => {
+cron.schedule('*/10 * * * * *', async() => {
     console.log('running a task every 10 Second');
     await sendWelcomeEmail()
 });

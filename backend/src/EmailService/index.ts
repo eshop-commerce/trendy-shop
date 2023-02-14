@@ -26,7 +26,7 @@ for(let user of users){
     html
 };
 
-// console.log(html);
+console.log(html);
 
  try {
 await sendMail(message) 
