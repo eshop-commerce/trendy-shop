@@ -22,7 +22,7 @@ END
 
 
 
-CREATE PROCEDURE insertOrders (@userId VARCHAR(100))
+CREATE OR ALTER PROCEDURE insertOrders (@userId VARCHAR(100))
 
 AS
 
@@ -30,12 +30,17 @@ BEGIN
 
 
 INSERT INTo Orders(UserId, productId, Amount, Quantity)
-SELECT Userid,productId, Amount , Quantity from Orders 
-Where UserId=@userId
-
+SELECT User_Id,product_Id, Amount , Quantity from userCart 
+Where User_Id=@userId
 
 END
 
+EXEC insertorders '948540f8-2ecd-4fb4-8b8d-cc6250f4c85b'
+
+
+
+
+DELETE FROM  Orders
 
 CREATE OR ALTER PROCEDURE  getUserOrders (@userid VARCHAR(100))
 AS

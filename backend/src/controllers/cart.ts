@@ -49,6 +49,7 @@ export async function addItem(req: ExtendsRequest, res: Response) {
    return res.status(400).json({ message: 'All fields should contain a value' })
 
   }
+  
 
  }
  catch (error: any) {

@@ -19,3 +19,5 @@ INSERT INTO userCart(Id,User_Id, Product_Id, Product_name, Amount, Quantity)
 VALUES( @id,@User_Id, @Product_Id, @Product_name ,  @Amount, @Quantity)
 END
 END
+
+DROP PROCEDURE InsertOrUpdate
