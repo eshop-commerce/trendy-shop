@@ -5,5 +5,3 @@ UPDATE productsTable SET isDeleted = 1 WHERE Id=@id
 END
 GO
 
-USE trendyShop
-EXEC deleteProduct '255'

@@ -45,7 +45,7 @@ try {
       return  res.status(201).json({message:'Product Added'})
 
     }else{
-      return  res.status(400).json({message:'All fields should contain a value'})
+      return  res.status(400).json({message:'A fields should contain a value'})
 
     }
 

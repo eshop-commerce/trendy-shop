@@ -1,3 +1,4 @@
+
 CREATE OR ALTER PROCEDURE InsertOrUpdate (
     @id VARCHAR(100), @Product_name VARCHAR(100)=NULL , @Product_price VARCHAR(100)=NULL, @Category_name VARCHAR(100)=NULL, @Image_URL VARCHAR(100) = NULL)
 
@@ -12,6 +13,7 @@ WHERE Id=@id
 
 END
 ELSE
+
 BEGIN
 INSERT INTO productsTable(Id, Product_name, Product_price,Category_name,Image_URL)
 VALUES( @id, @Product_name , @Product_price, @Category_name, @Image_URL)
