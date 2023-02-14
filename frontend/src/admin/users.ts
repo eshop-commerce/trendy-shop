@@ -7,7 +7,7 @@ const request = {
         return data;
     },
     postData: async(route: string, body: any) => {
-       const res = await fetch(baseURL+route,  {
+    const res = await fetch(baseURL+route,  {
             method: "POST",
             body: JSON.stringify(body),
             headers: {
@@ -15,13 +15,20 @@ const request = {
             }});
             return res;
     },
-    deleteData: () => {
-
+    deleteData:async(route: string, body: any) => {
+            const res = await fetch(`${baseURL}${route}`,  {
+            method: "DELETE",
+            body: JSON.stringify(body),
+            headers: {
+            "Content-type": "application/json; charset=UTF-8"
+                 }});
+                 return res;
     },
-    updateData: () => {
-
+    updateData:async () => {
+        
     }
 }
+
 
 // Function to get and populate products
 const getProducts = async() => {
@@ -36,7 +43,7 @@ try {
 
 }
 // Run this on page load
-getProducts();
+// getProducts();
 // Test post
 const data =   {
                     Product_name: "Khaki trousers",
