@@ -76,7 +76,7 @@ export async function Homepage(req:ExtendedRequest,res:Response) {
     }
 }
 
-export const cancelBooking=async(req:ExtendedRequest, res:Response)=>{
+export const deleteUser=async(req:ExtendedRequest, res:Response)=>{
     try {
       const user:User= await (
       await _db.exec('getUserById',{id:req.params.id})
