@@ -8,6 +8,7 @@ FOREIGN KEY (productId) REFERENCES productsTable(Id),
 FOREIGN KEY (UserId) REFERENCES UserTable(Id))
 
 
+
 CREATE PROCEDURE insertOrder(@id VARCHAR(100), @userId VARCHAR(100) 
 ,@productId VARCHAR(100) , @orderStatus VARCHAR(100),@quantity INT )
 AS
