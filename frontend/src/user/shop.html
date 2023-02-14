@@ -1,0 +1,757 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trendy shop</title>
+        <link rel="stylesheet" href="../all.css">
+        <link rel="stylesheet" href="shop.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <!-- <link rel="stylesheet" href="../homepage/home.css"> -->
+    </head>
+    <body>
+        <div
+            class="container">
+             <!-- Header Section Begin -->
+      <div class="header">
+
+        <div class="navbar_items">
+            <div class="header__logo">
+                <a href="../homepage/home.html"><img src="../assets/logo.png" alt=""></a>
+            </div>
+            <div class="navigation">
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="../homepage/home.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="../user/shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="../Orders_Page/Orders.html">MY ORDERS</a>
+                        </li>
+                        <li>
+                            <a href="../contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right__auth">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+                <ul class="header__right__widget">
+                    <li>
+                        <span class="icon_search search-switch">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_heart_alt">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </span>
+                            <div class="tip">2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_bag_alt">
+                                <ion-icon name="bag-remove-outline"></ion-icon>
+                            </span>
+                            <div class="tip">2</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+            <!-- Breadcrumb Begin -->
+            <div class="breadcrumb-option">
+                <div class="breadcrumb__links">
+                    <a href="../homepage/home.html">
+                        <ion-icon name="home"></ion-icon>
+                        Home
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </a>
+                    <span>Shop</span>
+                </div>
+            </div>
+            <!-- Breadcrumb End -->
+            <div class="content">
+                <div class="categories">
+                    <div class="">
+                        <div class="sidebar__categories">
+                            <div class="section-title sidebar_filter">
+                                <h4>Categories</h4>
+                            </div>
+                            <div class="cat">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-heading active">
+                                            <a data-toggle="collapse" data-target="#collapseOne">Health and beauty</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseTwo">Fashion</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseTwo">Home and office</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseThree">Appliances</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseFour">Accessories</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseFive">Phone & tablets</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- shop by price -->
+                    <div class="sidebar_filter">
+                        <div class="section-title sidebar_filter">
+                            <h4>Shop by Price</h4>
+                        </div>
+                        <div class="filter-range-wrap ">
+                            <div class="range-slider">
+                                <div class="price-input">
+                                    <p>Price:</p>
+                                    <input type="text" id="minamount" value="$50">
+                                    <input type="text" id="maxamount" value="$100">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">Filter</a>
+                    </div>
+
+                    <!-- carousel start -->
+                    <div class="container-banner"  id="bancar" style="background-image: url(../assets/banner/banner-1.jpg ); height: 500px;" >
+                        <div class="row">
+                            <div class="immortal" >
+                                <div class="banner__slider owl-carousel" >
+                                    <div class="banner__item" id="mySlides" style="display: none;">
+                                        <!-- <img src="../assets/shop/jacket.jpeg" alt="" style="width: 50%; height: 50%;"> -->
+                                        <div class="banner__text">
+                                            <span>The Chloe Collection</span>
+                                            <h4>The Project Jacket</h4>
+                                            <a href="#">Shop now</a>
+                                        </div>
+                                    </div>
+                                    <div class="banner__item" id="mySlides" style="display: none;">
+                                        <!-- <img src="../assets/shop/computer1.jpeg" alt="" style="width: 40%; height: 40%;"> -->
+                                        <div class="banner__text">
+                                            <span>The Trendy Collection</span>
+                                            <h4>Computer now Available</h4>
+                                            <a href="#">Shop now</a>
+                                        </div>
+                                    </div>
+                                    <div class="banner__item" id="mySlides" style="display: none;">
+                                        <!-- <img src="../assets/shop/shop-8.jpg" alt="" style="width: 50%; height: 50%;"> -->
+                                        <div class="banner__text">
+                                            <span>The Trendy Collection</span>
+                                            <h4>New Stock Available</h4>
+                                            <a href="#">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                </div>
+                              
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                    
+                </div>
+
+                <!-- unwanted products -->
+                <div class="items">
+
+                <div class="product__item">
+                    <div class="product__item__pic ">
+                        <img src="../assets/shop/shop-1.jpg" alt="item">
+                        <div class="label new">New</div>
+                        <ul class="product__hover">
+
+                            <li>
+                                <a class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- <li><img src="../assets/shop/shop-1.jpg" alt=""></li> -->
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline" style="text-align: center;"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Furry hooded parka</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-2.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-2.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Flowy striped skirt</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0</div>
+                    </div>
+
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-3.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-3.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Croc-effect bag</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-4.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-4.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Dark wash Xavi jeans</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item sale">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-5.jpg" alt="item">
+                        <div class="label">Sale</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-5.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Ankle-cuff sandals</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0
+                            <span>$ 59.0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-6.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-6.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Contrasting sunglasses</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-7.jpg" alt="item">
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-7.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Circular pendant earrings</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-8.jpg" alt="item">
+                        <div class="label stockout stockblue">Out Of Stock</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-8.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Cotton T-Shirt</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                    </div>
+                </div>
+
+
+                <div class="product__item sale">
+
+                    <div class="product__item__pic set-bg">
+                        <img src="../assets/shop/shop-9.jpg" alt="item">
+                        <div class="label">Sale</div>
+                        <ul class="product__hover">
+                            <li>
+                                <a href="../assets/shop/hop-9.jpg" class="image-popup">
+                                    <span class="arrow_expand">
+                                        <ion-icon name="resize-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon_bag_alt">
+                                        <ion-icon name="bag-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6>
+                            <a href="#">Water resistant zips backpack</a>
+                        </h6>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="product__price">$ 49.0
+                            <span>$ 59.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="pagination__option">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" >
+                <ion-icon name="chevron-forward-outline" ></ion-icon>
+            </a>
+        </div>
+        </div>
+        
+         
+        
+        <!-- end unwanted products -->
+
+        <!-- insta -->
+        <div
+                class="insta_messages">
+
+                <!-- Instagram Begin -->
+                <div class="instagram">
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-1.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-2.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-3.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-4.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-5.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+                    <div class="instagram__item set-bg" style="background-image: url(../assets/instagram/insta-6.jpg)">
+                        <div class="instagram__text">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <a href="#">@ trendy-shop</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        <!-- insta end -->
+          <!-- Footer Section Begin -->
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="../assets/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                          cilisis.</p>
+                        <div class="footer__payment">
+                            <a href="#"><img src="../assets/payment/payment-1.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-2.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-3.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-4.png" alt=""></a>
+                            <a href="#"><img src="../assets/payment/payment-5.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer__widget">
+                        <h6>Quick links</h6>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <h6>Account</h6>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders Tracking</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__newslatter">
+                        <h6>NEWSLETTER</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__social">
+                            <a href="#">
+                                <i class="fa fa-facebook" style="color: black;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="row_main_foot">
+                    <div class="main_foot">
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved | This template is made with
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                by
+                                <a href="#" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Section End -->
+    </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../../dist/carousel.js"></script>
+
+</body>
+</html>
