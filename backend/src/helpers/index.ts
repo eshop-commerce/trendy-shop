@@ -7,6 +7,7 @@ export const productSchema = Joi.object({
 })
 
 export const userCartSchema = Joi.object({
+    user_Id: Joi.string().required(),
     Product_Id:Joi.string().required(),
     Product_name:Joi.string().required(),
     Quantity:Joi.number().required()

@@ -5,9 +5,10 @@ import { Item } from '../models/cart'
 import { DatabaseHelper } from '../databaseHelpers'
 const _db = new DatabaseHelper()
 interface ExtendsRequest extends Request {
- body: { Product_Id: string, Product_name: string, Quantity: string, Amount:string, },
+ body: { User_Id:string, Product_Id: string, Product_name: string, Quantity: string, Amount:string, },
  params: { id: string }
 }
+
 //Get Items
 export const getItems: RequestHandler = async (req, res) => {
  try {
@@ -38,10 +39,10 @@ export const getOneItem = async (req: ExtendsRequest, res: Response) => {
 export async function addItem(req: ExtendsRequest, res: Response) {
  try {
   const id = uid()
-  const { Product_Id, Product_name, Amount, Quantity } = req.body
-  if (Product_Id && Product_name && Amount && Quantity) {
+  const { User_Id, Product_Id, Product_name, Amount, Quantity } = req.body
+  if (User_Id && Product_Id && Product_name && Amount && Quantity) {
    _db.exec('InsertOrUpdate',
-    { id:id, Product_Id: Product_Id, Product_name: Product_name, Amount: Amount, Quantity: Quantity })
+    { id: id, User_Id: User_Id, Product_Id: Product_Id, Product_name: Product_name, Amount: Amount, Quantity: Quantity })
    return res.status(201).json({ message: 'Item Added' })
 
   } else {
@@ -61,11 +62,11 @@ export async function addItem(req: ExtendsRequest, res: Response) {
 
 export async function updateItem(req: ExtendsRequest, res: Response) {
  try {
-  const { Product_Id, Product_name, Amount, Quantity } = req.body
+  const { User_Id, Product_Id, Product_name, Amount, Quantity } = req.body
   const item: Item = await (await _db.exec('getItemById', { id: req.params.id })).recordset[0]
 
   if (item) {
-   await _db.exec('InsertOrUpdate', { id: req.params.id, Product_Id: Product_Id, Product_name: Product_name, Amount:Amount, Quantity: Quantity })
+   await _db.exec('InsertOrUpdate', { id: req.params.id, User_Id: User_Id, Product_Id: Product_Id, Product_name: Product_name, Amount:Amount, Quantity: Quantity })
    return res.status(200).json({ message: 'Updated' })
   }
 
