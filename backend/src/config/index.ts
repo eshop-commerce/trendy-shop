@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import path from 'path'
-dotenv.config({ path: path.resolve(__dirname, '../../../.env') })
+dotenv.config({ path: path.resolve(__dirname, '../../.env') })
 export const sqlConfig = {
 
   user: process.env.DB_USER,
@@ -15,6 +15,6 @@ export const sqlConfig = {
   },
   options: {
     encrypt: false, // for azure
-    trustServerCertificate: false // change to true for local dev / self-signed certs
+    trustServerCertificate: true // change to true for local dev / self-signed certs
   }
 }

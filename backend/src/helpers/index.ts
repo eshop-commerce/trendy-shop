@@ -5,3 +5,7 @@ export const productSchema = Joi.object({
     Product_price:Joi.number().required(),
     Category_name:Joi.string().required()
 })
+
+export const categorySchema = Joi.object({
+    Category_name:Joi.string().required
+})
