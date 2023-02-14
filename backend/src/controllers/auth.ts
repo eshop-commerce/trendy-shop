@@ -1,12 +1,12 @@
 import { RequestHandler,Request,Response } from 'express'
 import {v4 as uid} from 'uuid'
-import { LoginSchema, RegistrationSchema } from '../Helpers'
-import { DecodedData, User } from '../Models'
+import { LoginSchema, RegistrationSchema } from '../helpers'
+import { DecodedData, User } from '../models/auth'
 import Bcrypt from 'bcrypt'
 import dotenv from 'dotenv'
 import path from 'path'
 import jwt from 'jsonwebtoken'
-import { DatabaseHelper} from '../DatabaseHelpers'
+import { DatabaseHelper} from '../databaseHelpers'
 
 const  _db = new DatabaseHelper()
 dotenv.config({ path: path.resolve(__dirname, '../../.env') })
@@ -24,8 +24,7 @@ try {
         return res.status(422).json(error.details[0].message)
     }
     const hashedPassword= await Bcrypt.hash(Password,10)
-    ///check if email exist
-    await _db.exec('RegisterUser', {name:Name,email:Email, password:hashedPassword})
+    await _db.exec('RegisterUser', {id:id,name:Name,email:Email, password:hashedPassword})
     return res.status(201).json({message:'User registered'})
 
 } 
@@ -56,11 +55,11 @@ try {
         const {Password,...rest}=item
         return rest
     })
-    const token = jwt.sign(payload[0], process.env.SECRETKEY as string , {expiresIn:'3600s'})
-    return res.status(200).json({message:'User Loggedin!!!', token})
+    // const token = jwt.sign(payload[0], process.env.SECRETKEY as string , {expiresIn:'3600s'})
+    return res.status(200).json({message:'User Loggedin!!!'})
 
 } catch (error) {
-    res.status(500).json(error) 
+    res.status(500).json(error)
 }
 }
 
