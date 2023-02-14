@@ -13,9 +13,11 @@ WHERE Id=@id
 
 END
 ELSE
+
 BEGIN
 INSERT INTO productsTable(Id, Product_name, Product_price,Category_name)
 VALUES( @id, @Product_name , @Product_price, @Category_name)
 END
 END
+
 
