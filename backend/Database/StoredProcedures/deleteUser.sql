@@ -1,3 +1,4 @@
+-- USE Client
 
 CREATE OR ALTER PROCEDURE deleteUser(@id VARCHAR(50))
 AS
