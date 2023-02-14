@@ -32,13 +32,30 @@ function getProducts(){
         showProduct(Product)
     }).catch(error => console.error(error.message));
 }
-console.log("helo")
+console.log("helo00")
 getProducts()
+
+
 function showProduct(Product: Products[]) {
     console.log('Here====================================');
     console.log(Product);
     console.log('====================================');
+    Product.forEach((a)=>{
+        let html =`
+        <div class="todo" onclick="">
+            <h1>${a.Product_name}</h1>
+            <p>${a.Product_price}</p>
+            <p>${a.Category_name}</p>
+        </div>
+        `
+    console.log(Product)
+        productDiv.innerHTML += html
+    })
 }
+// showProduct()
+
+
+
 function updateProduct(){
 
 }
