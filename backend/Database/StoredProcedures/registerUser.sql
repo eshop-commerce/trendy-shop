@@ -6,4 +6,4 @@ INSERT INTO UserTable(Id,Name,Email,Password)
 VALUES(@id,@name,@email,@password)
 
 END
-EXEC RegisterUser 'ugeb9ajke','J cole','Jcole2022@gmail.com', 'giweya67@!iWe'
+-- EXEC RegisterUser 'ugeb9ajke','J cole','Jcole2022@gmail.com', 'giweya67@!iWe'

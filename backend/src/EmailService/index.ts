@@ -15,7 +15,7 @@ const sendWelcomeEmail = async()=>{
     const pool = await mssql.connect(sqlConfig)
     const users:User[]= await(await pool.request().
     query("SELECT * FROM UserTable WHERE isSent ='0'")).recordset
-    // console.log(users);
+    console.log(users);
 
 for(let user of users){
     ejs.renderFile('Templates/registration.ejs',{name:user.Name}, async(error, html)=>{
