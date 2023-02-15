@@ -4,7 +4,7 @@ let addForm = document.querySelector('.add-new-product') as HTMLFormElement
 let addProduct = document.querySelector(".add-product") as HTMLButtonElement
 // input elements
 let product_name = document.getElementById("product-name") as HTMLInputElement
-let product_price = document.getElementById("product-pricee") as HTMLInputElement
+let product_price = document.getElementById("product-price") as HTMLInputElement
 let product_image = document.getElementById("product-image") as HTMLInputElement
 let category = document.getElementById("product-category") as HTMLInputElement
 
@@ -17,23 +17,6 @@ interface Products{
     Image_URL: string
   }
 let Product:Products[]=[]
-
-
-// function allProducts(){
-//     fetch('http://localhost:3002/api/cartitems/8fe3f01c-5d55-41ca-93ef-a84dcf27c2f8',{
-//             method: 'GET',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Authorization': 'Bearer ' + token
-//             }
-
-//         }).then(res => res.json())
-//         .then(data => {
-//             this.items = data;
-
-//         })
-// }
-
  function getProducts(){
     fetch(BaseURL)
     .then((response) => response.json())
@@ -42,7 +25,7 @@ let Product:Products[]=[]
         showProduct(Product)
     }).catch(error => console.error(error.message));
 }
-console.log("helo00")
+// console.log("helo00")
 getProducts()
 
 
@@ -103,16 +86,22 @@ function showProduct(Product: Products[]) {
         </div>
     </div>
         `
-    console.log(Product)
+    // console.log(Product)
         productDiv.innerHTML += html
     })
 }
 // showProduct()
 
-
-addorupdate.addEventListener('click',updateProduct)
-function updateProduct(){
+addorupdate.addEventListener('click',()=>{
     addForm.style.display="block"
+})
+addProduct.addEventListener('click',updateProduct)
+function updateProduct(event: any){
+    event.preventDefault();
+
+    console.log("hello", product_name.value);
+    
+    
     const p_name = product_name.value
     const p_image = product_image.value
     const p_category = category.value
@@ -120,34 +109,53 @@ function updateProduct(){
     if(p_name==''|| p_image=='' ||p_category=='' || p_price==''){
         const p = document.createElement('p')
         p.textContent='Please fill in all Fields'
-        p.style.color='red'
+        p.style.color='orange'
         p.id='error-message'
         addForm.insertAdjacentElement('afterbegin', p)
 
         setTimeout(()=>{
             p.style.display='none'
-        },4000)}
+        },2000)}
        else {
-
-}}
-function postProduct(){
-    let payload = {
-        Product_name:"p_name",
-        Product_price:"p_price",
-        Category_name:"p_category",
-        Image_URL:"p_image"
-    }
+        let payload = {
+            Product_name:p_name,
+            Product_price:p_price,
+            Category_name:p_category,
+            Image_URL:p_image
+        }
+        
+        postProduct(payload)
+        event.preventDefault();
+        addForm.style.display="none"
+}
+}
+function postProduct(payload:any){
+   
     let options ={
         method:'POST',
-        body:JSON.stringify(payload)
+        body:JSON.stringify(payload),
+        headers: {
+                'Content-Type': 'application/json'
+            }
     }
     fetch(BaseURL,options)
     .then(response=>console.log(response.status));
 }
-// postProduct()
-// addProduct.addEventListener("click", postProduct)
 
-  
+// function allProducts(){
+//     fetch('http://localhost:3002/api/cartitems/8fe3f01c-5d55-41ca-93ef-a84dcf27c2f8',{
+//             method: 'GET',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Authorization': 'Bearer ' + token
+//             }
+
+//         }).then(res => res.json())
+//         .then(data => {
+//             this.items = data;
+
+//         })
+// }
 
     
 
@@ -157,20 +165,5 @@ function postProduct(){
 
 
 
-// function showProducts(){
-//     Task.forEach((a) => {
-//         let html = `
-//                   <div class="task" style ="display:flex;flex-direction:column;gap:5px; margin-top:10px;" onclick="popTask(${a.id})" >                      
-//                           <img src="${a.TaskImage}" style="width:98%;height:100px">
-//                           <p>${a.dates}</p>  
-//                           <p>${a.TaskName}</p>   
-//                           <p>${Math.abs(a.Days)} Streaks</p>  
-
-//                   </div>`;
-
-//         activities.innerHTML += html;
-//       });
-// }
-// update
 
 

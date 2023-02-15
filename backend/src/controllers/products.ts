@@ -39,6 +39,7 @@ try {
   try {
     const id =uid()
     const {Product_name,Product_price,Category_name,Image_URL}= req.body
+    
     if(Product_name && Product_price && Category_name && Image_URL){
       _db.exec('InsertOrUpdate', 
       {id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name,Image_URL:Image_URL})
