@@ -1,5 +1,6 @@
 let prodName = document.getElementById("prodName")as HTMLLinkElement
 let testing = document.getElementById("testing") as HTMLDivElement
+let itemsUser = document.getElementById("itemsUser") as HTMLDivElement
 interface Products{
     Id: string,
     Product_name:string,
@@ -27,18 +28,19 @@ function showUserProduct(ProductUser: Products[]) {
     console.log('====================================');
     ProductUser.forEach((a)=>{
         let html =`
-        <div class="product__item__pic set-bg">
+        <div class="product__item" id="dbProduct" onclick="getOneProduct(${a.Id})">
+        <div class="product__item__pic set-bg" >
         <img src="../assets/shop/shop-8.jpg" alt="item">
         <div class="label stockout stockblue">Out Of Stock</div>
         <ul class="product__hover">
             <li>
-                <a href="../assets/shop/hop-8.jpg" class="image-popup">
+                <a href="#" >
                     <span class="arrow_expand">
-                        <ion-icon name="resize-outline"></ion-icon>
+                        <ion-icon name="resize-outline" ></ion-icon>
                     </span>
                 </a>
             </li>
-            <li>
+            <li >
                 <a href="#">
                     <span class="icon_heart_alt">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -48,13 +50,13 @@ function showUserProduct(ProductUser: Products[]) {
             <li>
                 <a href="#">
                     <span class="icon_bag_alt">
-                        <ion-icon name="bag-outline"></ion-icon>
+                    <ion-icon name="cart-outline"></ion-icon>
                     </span>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="product__item__text">
+    <div class="product__item__text" >
         <h6>
             <a href="#">${a.Product_name}</a>
         </h6>
@@ -67,15 +69,31 @@ function showUserProduct(ProductUser: Products[]) {
         </div>
         <div class="product__price">$ ${a.Product_price}</div>
         <h6>
-            <a href="#"><h6><b>Category:</b></h6> ${a.Category_name}</a>
+            <b>Category:</b> ${a.Category_name}</b>
         </h6>
     </div>
 </div>
         `
         testing.style.display = "flex"
-        testing.innerHTML += html
+        itemsUser.innerHTML += html
     // console.log(ProductUser)
     //    console.log( prodName.innerText = a.Product_name)
     //    prodName.innerText = a.Product_name
     })
 }
+
+
+// get one product
+// let oneProduct:Products
+function getOneProduct(Id:string){
+    fetch(`http://localhost:4004/products/${Id}`)
+    .then((response) => response.json())
+    .then((data :Products[]) => {
+        ProductUser = data
+        console.log(data)
+        console.log("God is greatness")
+        showUserProduct(ProductUser)
+    }).catch(error => console.error(error.message));
+}
+
+
