@@ -33,6 +33,7 @@ await sendMail(message)
 await pool.request().query(`UPDATE UserTable SET isSent ='1' WHERE Id ='${user.Id}'`)
  } catch (error) {
     console.log(error);
+    console.log(html)
     
  }  
 })
