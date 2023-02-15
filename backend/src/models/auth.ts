@@ -7,6 +7,7 @@ export interface DecodedData{
   Id: string,
   Name:string,
   Email:string,
+  Role?:string
   iat:number
   exp:number
 }
