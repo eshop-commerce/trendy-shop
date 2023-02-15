@@ -18,12 +18,12 @@
 
  if(order === 'desc'){
   $(this).data('order', "asc")
-			myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+			myArray = myArray.sort((a,b) => a[column.price] > b[column.price] ? 1 : -1)
  text += '&#9650'
 
 		}else{
   $(this).data('order', "desc")
-			myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+			myArray = myArray.sort((a,b) => a[column.price] < b[columnprice] ? 1 : -1)
  text += '&#9660'
 
 		}
@@ -47,7 +47,6 @@
   <td>${data[i].action}</td>
  </tr>`
  table.innerHTML += row
-
-
+ 
 		}
 	}

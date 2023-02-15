@@ -15,7 +15,6 @@ nav ul {
   gap: 20px;
 }
 
-
 nav a {
   text-decoration: none;
   color: #707070;
@@ -39,26 +38,29 @@ nav a:focus {
 }
 
 /* Section-1 orders */
-.section-1{
+.section-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sub-section-2{
+.sub-section-2 {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-.ac-profile img{
+.ac-profile img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
 
-
 /* Table orders style start */
 th {
   color: #fff;
+}
+
+#bg-color {
+  background-color: black;
 }
