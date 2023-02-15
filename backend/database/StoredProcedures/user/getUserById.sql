@@ -1,0 +1,6 @@
+CREATE PROCEDURE getUserById(@id VARCHAR(300))
+AS
+BEGIN
+
+	SELECT * FROM UserTable WHERE Id =@id
+END
