@@ -19,7 +19,7 @@ authrouter.use('/userCart', VerifyTokenUser)
 authrouter.post('/register',RegisterUser)
 authrouter.post('/login', loginUser)
 authrouter.get('/users', loginUser)
-authrouter.delete('/deleteUser', deleteUser)
+authrouter.delete('/:Email', deleteUser)
 authrouter.get('/active',getActiveUsers )
 authrouter.get('/home',VerifyToken, Homepage)//protected Route
 
