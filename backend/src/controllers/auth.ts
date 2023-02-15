@@ -6,7 +6,6 @@ import Bcrypt from 'bcrypt'
 import dotenv from 'dotenv'
 import path from 'path'
 import jwt from 'jsonwebtoken'
-import sendMail from '../HelpersEmail/email'
 import { DatabaseHelper} from '../databaseHelpers'
 
 const  _db = new DatabaseHelper()
@@ -25,7 +24,8 @@ try {
         return res.status(422).json(error.details[0].message)
     }
     const hashedPassword= await Bcrypt.hash(Password,10)
-    await _db.exec('RegisterUser', {id:id,name:Name,email:Email, password:hashedPassword} )
+    ///check if email exist
+    await _db.exec('RegisterUser', {name:Name,email:Email, password:hashedPassword})
     return res.status(201).json({message:'User registered'})
     
 
@@ -35,6 +35,15 @@ catch (error) {
 }
 }
 
+export const getAllUsers:RequestHandler=async (req,res)=>{
+  try {
+     const users:User[]= await (await _db.exec('getAllUsers')).recordset
+    res.status(200).json(users)
+  } catch (error) {
+   res.status(500).json(error)
+  }
+
+}
 
 export async function loginUser(req:ExtendedRequest, res:Response){
 try {
@@ -58,7 +67,7 @@ try {
         return rest
     })
     const token = jwt.sign(payload[0], process.env.SECRETKEY as string , {expiresIn:'3600s'})
-    return res.status(200).json({message:'User Loggedin!!!',token})
+    return res.status(200).json({message:'User Loggedin!!!', token})
 
 } catch (error) {
     res.status(500).json(error)
