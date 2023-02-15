@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./styles/styles.css">
- <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
-
- <div class="container">
-  <div class="content">
-   <div class="title">Login</div>
-   <div class="profile">
-    <h2>E-SHOP</h2>
-   </div>
-   <form action="#">
-    <div class="login">
-     <div class="user-details">
-      <div class="input-box">
-       <span class="details">Email</span>
-       <input type="text" placeholder="Type here your Email" required>
-      </div>
-      <div class="input-box">
-       <span class="details">Password</span>
-       <input type="text" placeholder="Type here your Password" required>
-      </div>
-      <div class="button">
-       <input type="submit" value="Login">
-      </div>
-      <div class="redirect">
-       <a href="./Register.html">
-        <h2>Register</h2>
-       </a><a href="#">
-        <h2>Forgot Password</h2>
-       </a>
-      </div>
-     </div>
-    </div>
-   </form>
-  </div>
- </div>
-
+    <form class="login-form">
+        <div class="logo_container">
+          <E-SHOP>E-SHOP</E-SHOP>
+        </div>
+        <h3>LOGIN</h3>
+      
+        <div class="container login-details">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter your email" name="uname" required id="email">
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required id="password">
+      
+          <button type="submit" id="login-btn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="signupbtn"><a href="./Register.html">signup</a></a></button>
+          <span class="password">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+<script src="./../../dist/login_and_Signup/ts/login.js" defer ></script> 
 </body>
-
 </html>
