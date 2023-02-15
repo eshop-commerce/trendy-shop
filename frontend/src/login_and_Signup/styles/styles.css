@@ -7,20 +7,24 @@
   font-family: "Montserrat";
 }
 
-.container{
- height: 98vh;
- width: 96vw;
+.containerAuth{
+  /* position: absolute; */
+ height: 80vh;
+ width: 30vw;
  background-color: white;
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
- border: 2px solid red;
+ left: 40%;
+ gap: 60px;
+ /* border: 2px solid red; */
 }
 
-.content{
- border: 2px solid blue;
- height: 100%;
- width: 30%;
+.contentAuth{
+ /* border: 2px solid blue; */
+ /* height: 100%; */
+ /* width: 30%; */
 }
 .title{
  padding: 20px;
@@ -33,8 +37,8 @@
 }
 
 .login{
- padding-top: 70%;
- height: 500px;
+ /* padding-top: 70%; */
+ /* height: 500px; */
  /* border: 2px solid red; */
 }
 .input-box{

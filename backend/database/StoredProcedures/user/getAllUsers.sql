@@ -4,4 +4,3 @@ CREATE OR ALTER PROCEDURE getAllUsers
     SELECT * FROM UserTable
     END
 
-EXEC getAllUsers

@@ -25,15 +25,36 @@ let Product:Products[]=[]
 // }
 
 function getProducts(){
-    fetch("http://localhost:4000/products")
+    fetch("http://localhost:4004/products")
     .then((response) => response.json())
-    .then((data) => {
+    .then((data :Products[]) => {
         Product = data
-        return data;
-    }).catch(error => console.error(error));
+        showProduct(Product)
+    }).catch(error => console.error(error.message));
 }
-console.log("helo")
+console.log("helo00")
 getProducts()
+
+
+function showProduct(Product: Products[]) {
+    console.log('Here====================================');
+    console.log(Product);
+    console.log('====================================');
+    Product.forEach((a)=>{
+        let html =`
+        <div class="todo" onclick="">
+            <h1>${a.Product_name}</h1>
+            <p>${a.Product_price}</p>
+            <p>${a.Category_name}</p>
+        </div>
+        `
+    console.log(Product)
+        productDiv.innerHTML += html
+    })
+}
+// showProduct()
+
+
 
 function updateProduct(){
 
@@ -53,6 +74,8 @@ function displayProducts(){
     })
 }
 displayProducts()
+
+
 
 // function showProducts(){
 //     Task.forEach((a) => {

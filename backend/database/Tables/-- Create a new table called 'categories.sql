@@ -6,7 +6,7 @@ GO
 -- Create the table in the specified schema
 CREATE TABLE dbo.categories
 (
-    categoryId [VARCHAR](300), -- primary key column
+    categoryId [VARCHAR](300)  PRIMARY KEY, -- primary key column
     Category_name[VARCHAR](300),
      isDeleted BIT DEFAULT(0)
     
