@@ -4,7 +4,7 @@ showSlides();
 function showSlides() {
   let i:number;
   let slides = document.getElementsByClassName("banner__item");
-  console.log(slides)
+  // console.log(slides)
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < 3; i++) {
    ( slides[i] as HTMLDivElement).style.display = "none";  

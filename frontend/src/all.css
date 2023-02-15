@@ -7,6 +7,9 @@
   *, ::after, ::before {
     box-sizing: border-box;
   }
+  .arrow_expand, .icon_heart_alt, .icon_bag_alt{
+    padding: 10px;
+  }
   body {
     height: 100%;
     font-family: "Montserrat", sans-serif;
