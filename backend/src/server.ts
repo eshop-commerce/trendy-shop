@@ -6,6 +6,7 @@ import authrouter from './routers/authRoutes'
 import cron from 'node-cron'
 import sendWelcomeEmail from './backgroundservices/emailService'
 
+import orderRoute from './routers/orderRoute'
 const app= express()
 
 //Register some Middlewares
@@ -15,9 +16,9 @@ app.use(json()) //adds a body to the Request
 app.use('/userCart', userCartrouter)
 app.use('/products', router)
 app.use('/auth',authrouter)
+app.use('/orders', orderRoute)
 
 
-app.use('/UserCart',router)
 
 cron.schedule('*/10 * * * * *', async() => {
     console.log('running a task every 10 Second');

@@ -10,9 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../Orders_Page/styles/styles.css">
-        <link rel="stylesheet" href="styles.css">
-        
+    <link rel="stylesheet" href="../Orders_Page/styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     </head>
     <body>
@@ -100,91 +99,97 @@
                         </div>
                     </div>
                 </div>
+              
 
+        
 
-                <!-- Display cards -->
-                <div class="display-cards">
-                    <div class="products-card">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        <h4>Products</h4>
-                    </div>
-                    <div class="users-card">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        <h4>Users</h4>
-                    </div>
-                    <div class="orders-card">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        <h4>Orders</h4>
-                    </div>
-                    <div class="total-sales-card">
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        <div class="total-number">
-                            <h4>Total Sales</h4>
-                            <h3>$560k</h3>
-                        </div>
+            <!-- Display cards -->
+            <div class="display-cards">
+                <div class="products-card">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <h4>Products</h4>
+                </div>
+                <div class="users-card">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <h4>Users</h4>
+                </div>
+                <div class="orders-card">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <h4>Orders</h4>
+                </div>
+                <div class="total-sales-card">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <div class="total-number">
+                        <h4>Total Sales</h4>
+                        <h3>$560k</h3>
                     </div>
                 </div>
-
-                <!-- orders -->
-                <div class="container-orders">
-
-                    <div
-                        class="content" style="margin-top: 3rem;">
-                        <!-- Section 1 start -->
-                        <div class="section-1">
-                            <div class="sub-section-1">
-                                <h2>Order</h2>
-                                <p>28 orders found</p>
-                            </div>
-                            <div class="sub-section-2">
-                                <ion-icon name="notifications-outline"></ion-icon>
-                                <ion-icon name="search"></ion-icon>
-                                <div class="ac-profile">
-                                    <img src="https://wallpapers.com/images/hd/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg" alt="profile">
-                                    <select name="select" id="select">Hello</select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Section 1 end -->
-
-                        <div class="section-2">
-                            <div class="orders-nav">
-                                <nav>
-                                    <ul>
-                                        <li><a href="index.html" class="current-page">All orders</a></li>
-                                        <li><a href="about _me.html">Dispatch</a></li>
-                                        <li><a href="recent-posts.html">Pending</a></li>
-                                        <li><a href="recent-posts.html">Completed</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="table-orders">
-                            <table class="table table-striped">
-                                <tr class="bg-info">
-                                    <th data-column="id" data-order="desc">ID &#9660</th>
-                                    <th data-column="name">Name</th>
-                                    <th data-column="address">Address</th>
-                                    <th data-column="date" data-order="desc">Date &#9660</th>
-                                    <th data-column="price" data-order="desc">Price &#9660</th>
-                                    <th data-column="status">Status</th>
-                                    <th data-column="action">Action</th>
-                                </tr>
-
-                                <tbody id="myTable"></tbody>
-                            </table>
-                        </div>
-
-
-                    </div>
-                </div>
-
             </div>
 
+            <!-- orders -->
+            <div class="container-orders">
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../../dist/carousel.js"></script>
+                <div class="content" style="margin-top: 3rem;">
+                    <!-- Section 1 start -->
+                    <!-- <div class="section-1">
+                        <div class="sub-section-1">
+                            <h2>Order</h2>
+                            <p>28 orders found</p>
+                        </div>
+                        <div class="sub-section-2">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                            <ion-icon name="search"></ion-icon>
+                            <div class="ac-profile">
+                                <img src="https://wallpapers.com/images/hd/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg"
+                                    alt="profile">
+                                <select name="select" id="select">Hello</select>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Section 1 end -->
+
+                    <div class="section-2">
+                        <div class="orders-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html" class="current-page">All orders</a></li>
+                                    <li><a href="about _me.html">Dispatch</a></li>
+                                    <li><a href="recent-posts.html">Pending</a></li>
+                                    <li><a href="recent-posts.html">Completed</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="table-orders">
+                        <table class="table table-striped">
+                            <tr class="bg-info " id="bg-color">
+                                <th data-column="id" id="id" data-order="desc">ID &#9660</th>
+                                <th data-column="name">Name</th>
+                                <!-- <th data-column="address">Address</th>
+                            <th data-column="date" data-order="desc">Date &#9660</th>
+                            <th data-column="price" data-order="desc">Price &#9660</th> -->
+                                <th data-column="status">Status</th>
+                                <th data-column="date" data-order="desc">Quantity</th>
+                                <th data-column="price" data-order="desc">Price </th>
+                                <th data-column="action">Action</th>
+                            </tr>
+
+                            <tbody id="myTable"></tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../../dist/admin/orders.js"></script>
+        <script src="../../dist/carousel.js"></script>
     <script src="../../dist/user/shop.js"></script>
-    </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
 </html>

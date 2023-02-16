@@ -9,5 +9,9 @@ CREATE TABLE productsTable (
     isDeleted BIT DEFAULT(0),
     addToWishlist BIT DEFAULT(0)
 )
+
+-- ALTER 
+-- ALTER TABLE productsTable 
+-- ADD Image_URL VARCHAR (100)
 -- DROP TABLE productsTable
-SELECT * FROM  productsTable
+-- SELECT * FROM  productsTable

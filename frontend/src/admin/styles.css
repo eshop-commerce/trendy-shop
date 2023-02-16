@@ -65,7 +65,7 @@
 
 .container-admin{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     background-color: whitesmoke;
 }
@@ -181,9 +181,9 @@
     display: flex;
     flex-direction: column;
 }
-.table{
+/* .table{
     display: flex;
-}
+} */
 .previous-next{
     display: flex;
     width: 100%;
@@ -214,12 +214,11 @@
     height: 75%;
     width: 40%;
     min-width: 300px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0);
     z-index: 1000;
     background-color: grey;
     padding: 1rem;
     border-radius: 0.5rem;
-    display: none;
 }
 .add-new-product input, select{
     width: 100%;

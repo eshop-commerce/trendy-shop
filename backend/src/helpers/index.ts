@@ -13,6 +13,15 @@ export const userCartSchema = Joi.object({
     Quantity:Joi.number().required()
 
 })
+
+export const ordersSchema = Joi.object({
+    user_Id: Joi.string().required(),
+    Product_Id: Joi.string().required(),
+    orderStatus: Joi.string().required(),
+    Quantity: Joi.number().required()
+})
+
+
 export const categorySchema = Joi.object({
     Category_name:Joi.string().required
 })

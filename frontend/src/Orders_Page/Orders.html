@@ -4,14 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="stylesheet" href="../homepage/home.css">
         <link rel="stylesheet" href="../all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
         <title>Trendy shop</title>
     </head>
 
@@ -123,19 +123,23 @@
                 </div>
                 <div class="table-orders">
                     <table class="table table-striped">
-                        <tr class="bg-info">
-                            <th data-column="id" data-order="desc">ID &#9660</th>
+                        <tr class="bg-info " id="bg-color">
+                            <th data-column="id" id="id" data-order="desc">ID &#9660</th>
                             <th data-column="name">Name</th>
-                            <th data-column="address">Address</th>
+                            <!-- <th data-column="address">Address</th>
                             <th data-column="date" data-order="desc">Date &#9660</th>
-                            <th data-column="price" data-order="desc">Price &#9660</th>
+                            <th data-column="price" data-order="desc">Price &#9660</th> -->
                             <th data-column="status">Status</th>
+                            <th data-column="date" data-order="desc">Quantity</th>
+                            <th data-column="price" data-order="desc">Price </th> 
                             <th data-column="action">Action</th>
                         </tr>
 
                         <tbody id="myTable"></tbody>
                     </table>
                 </div>
+
+                
 
 
             </div>
@@ -269,7 +273,8 @@
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="./app.js"></script>
+            <!-- <script src="./app.js"></script> -->
+            <script src="../../dist/Orders_Page/orders.js"></script>
         </body>
     </body>
 </html>
