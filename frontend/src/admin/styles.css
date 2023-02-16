@@ -65,7 +65,7 @@
 
 .container-admin{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     background-color: whitesmoke;
 }
@@ -190,17 +190,17 @@
     justify-content: space-between;
     margin-top: 0.5rem;
 }
-/* .table{
+.table1{
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
     padding: 0.5rem;
     background-color: white;
 }
-.table ion-icon{
+.table1 ion-icon{
     font-size: 1rem;
     color: black;
-} */
+}
 .previous-next button{
     border: none;
     background-color: white;
@@ -211,7 +211,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 50%;
+    height: 75%;
     width: 40%;
     min-width: 300px;
     transform: translate(-50%,-50%) scale(0);

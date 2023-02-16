@@ -19,14 +19,14 @@ function getUserProducts(){
         showUserProduct(ProductUser)
     }).catch(error => console.error(error.message));
 }
-console.log("helo00")
+// console.log("helo00")
 getUserProducts()
 
 
 function showUserProduct(ProductUser: Products[]) {
-    console.log('Here====================================');
-    console.log(ProductUser);
-    console.log('====================================');
+    // console.log('Here====================================');
+    // console.log(ProductUser);
+    // console.log('====================================');
     ProductUser.forEach((a)=>{
         
         let html =`
@@ -88,9 +88,9 @@ function showUserProduct(ProductUser: Products[]) {
 // get one product
 // let oneProduct:Products
 function getOneProduct(Id:string){
- console.log('====================================');
- console.log('Hi there');
- console.log('====================================');
+//  console.log('====================================');
+//  console.log('Hi there');
+//  console.log('====================================');
     fetch(`http://localhost:4004/products/${Id}`)
     .then((response) => response.json())
     .then((data) => {
@@ -102,8 +102,8 @@ function getOneProduct(Id:string){
 
 
 function showOneProduct(X:Products) {
-    console.log(X)
-   console.log("hooo")
+    // console.log(X)
+//    console.log("hooo")
    testing.innerHTML =""
     let html =`
         <div class="product__item" id="dbProduct" >

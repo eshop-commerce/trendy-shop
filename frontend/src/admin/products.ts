@@ -7,6 +7,7 @@ let product_name = document.getElementById("product-name") as HTMLInputElement
 let product_price = document.getElementById("product-price") as HTMLInputElement
 let product_image = document.getElementById("product-image") as HTMLInputElement
 let category = document.getElementById("product-category") as HTMLInputElement
+let closepopup = document.querySelector(".close-popup") as HTMLDivElement
 
 let BaseURL ="http://localhost:4004/products"
 interface Products{
@@ -30,9 +31,9 @@ getProducts()
 
 
 function showProduct(Product: Products[]) {
-    console.log('Here====================================');
-    console.log(Product);
-    console.log('====================================');
+    // console.log('Here====================================');
+    // console.log(Product);
+    // console.log('====================================');
     Product.forEach((a)=>{
         // let html =`
         // <div class="todo" onclick="">
@@ -82,7 +83,7 @@ function showProduct(Product: Products[]) {
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
             </div>
-            <div class="product__price">$ ${a.Product_price}</div>
+            <div class="product__price"> ${a.Product_price}</div>
         </div>
     </div>
         `
@@ -142,20 +143,11 @@ function postProduct(payload:any){
     .then(response=>console.log(response.status));
 }
 
-// function allProducts(){
-//     fetch('http://localhost:3002/api/cartitems/8fe3f01c-5d55-41ca-93ef-a84dcf27c2f8',{
-//             method: 'GET',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Authorization': 'Bearer ' + token
-//             }
-
-//         }).then(res => res.json())
-//         .then(data => {
-//             this.items = data;
-
-//         })
-// }
+closepopup.addEventListener("click", closeForm)
+function closeForm(event:any){
+    event.preventDefault();
+    addForm.style.display="none"
+}
 
     
 
