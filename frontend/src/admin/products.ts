@@ -30,9 +30,9 @@ getProducts()
 
 
 function showProduct(Product: Products[]) {
-    console.log('Here====================================');
-    console.log(Product);
-    console.log('====================================');
+    // console.log('Here====================================');
+    // console.log(Product);
+    // console.log('====================================');
     Product.forEach((a)=>{
         // let html =`
         // <div class="todo" onclick="">
@@ -82,7 +82,7 @@ function showProduct(Product: Products[]) {
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
             </div>
-            <div class="product__price">$ ${a.Product_price}</div>
+            <div class="product__price"> ${a.Product_price}</div>
         </div>
     </div>
         `
@@ -141,21 +141,6 @@ function postProduct(payload:any){
     fetch(BaseURL,options)
     .then(response=>console.log(response.status));
 }
-
-// function allProducts(){
-//     fetch('http://localhost:3002/api/cartitems/8fe3f01c-5d55-41ca-93ef-a84dcf27c2f8',{
-//             method: 'GET',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'Authorization': 'Bearer ' + token
-//             }
-
-//         }).then(res => res.json())
-//         .then(data => {
-//             this.items = data;
-
-//         })
-// }
 
     
 
