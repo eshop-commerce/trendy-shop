@@ -1,165 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./styles/styles.css">
- <link rel="stylesheet" href="../all.css">
- <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
-     <!-- Header Section Begin -->
-     <div class="header">
-                    
-        <div class="navbar_items">
-            <div class="header__logo">
-                <a href="../homepage/home.html"><img src="../assets/logo.png" alt=""></a>
-            </div>
-            <div class="navigation">
-                <nav class="header__menu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li class="active"><a href="../user/shop.html">Shop</a></li>
-                        <li><a href="../Orders_Page/Orders.html">MY ORDERS</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-           </div>
-            
-            <div class="header__right">
-                <div class="header__right__auth">
-                    <a href="../login_and_Signup/Login.html">Login</a>
-                    <a href="../login_and_Signup/Register.html">Register</a>
-                </div>
-                <ul class="header__right__widget">
-                    <li><span class="icon_search search-switch"><ion-icon name="search-outline"></ion-icon></span></li>
-                    <li><a href="#"><span class="icon_heart_alt"><ion-icon name="heart-outline"></ion-icon></span>
-                        <div class="tip">2</div>
-                    </a></li>
-                    <li><a href="#"><span class="icon_bag_alt"><ion-icon name="bag-remove-outline"></ion-icon></span>
-                        <div class="tip">2</div>
-                    </a></li>
-                </ul>
-            </div>
+    <form class="login-form">
+        <div class="logo_container">
+          <E-SHOP>E-SHOP</E-SHOP>
         </div>
-</div>
-<!-- Header Section End -->
-
- <div class="container" style="margin-top: 5rem; margin-bottom: 5rem;">
-       
-  <div class="content">
-   <div class="title">Login</div>
-   <div class="profile">
-    <h2>E-SHOP</h2>
-   </div>
-   <form action="#">
-    <div class="login">
-     <div class="user-details">
-      <div class="input-box">
-       <span class="details">Email</span>
-       <input type="text" placeholder="Type here your Email" required>
-      </div>
-      <div class="input-box">
-       <span class="details">Password</span>
-       <input type="text" placeholder="Type here your Password" required>
-      </div>
-      <div class="button">
-       <input type="submit" value="Login">
-      </div>
-      <div class="redirect">
-       <a href="./Register.html">
-        <h2>Register</h2>
-       </a><a href="#">
-        <h2>Forgot Password</h2>
-       </a>
-      </div>
-     </div>
-    </div>
-   </form>
-  </div>
- </div>
-  <!-- Footer Section Begin -->
-  <footer class="footer">
-    <div class="containe">
-        <div class="row">
-            <div class="footer__about">
-                <div class="footer__logo">
-                    <a href="./index.html"><img src="../assets/logo.png" alt=""></a>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                  cilisis.</p>
-                <div class="footer__payment">
-                    <a href="#"><img src="../assets/payment/payment-1.png" alt=""></a>
-                    <a href="#"><img src="../assets/payment/payment-2.png" alt=""></a>
-                    <a href="#"><img src="../assets/payment/payment-3.png" alt=""></a>
-                    <a href="#"><img src="../assets/payment/payment-4.png" alt=""></a>
-                    <a href="#"><img src="../assets/payment/payment-5.png" alt=""></a>
-                </div>
-            </div>
-            <div class="footer__widget">
-                <h6>Quick links</h6>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer__widget">
-                <h6>Account</h6>
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Orders Tracking</a></li>
-                    <li><a href="#">Checkout</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                </ul>
-            </div>
-            <div class="footer__newslatter">
-                <h6>NEWSLETTER</h6>
-                <form action="#">
-                    <input type="text" placeholder="Email">
-                    <button type="submit" class="site-btn">Subscribe</button>
-                </form>
-                <div class="footer__social">
-                    <a href="#">
-                        <i class="fa fa-facebook" style="color: black;"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-youtube-play"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-pinterest"></i>
-                    </a>
-                </div>
-            </div>
-        </div><br/>
-        <div class="row_main_foot">
-            <div class="main_foot">
-                <div class="footer__copyright__text">
-                    <p>Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        All rights reserved | This template is made with
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        by
-                        <a href="#" target="_blank">Kelvin, Verah, Jesseh and Felix</a>
-                    </p>
-                </div>
-            </div>
+        <h3>LOGIN</h3>
+      
+        <div class="container login-details">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter your email" name="uname" required id="email">
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required id="password">
+      
+          <button type="submit" id="login-btn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
         </div>
-    </footer>
-    <!-- Footer Section End -->
-
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="signupbtn"><a href="./Register.html">signup</a></a></button>
+          <span class="password">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+<script src="./../../dist/login_and_Signup/ts/login.js" defer ></script> 
 </body>
-
 </html>
