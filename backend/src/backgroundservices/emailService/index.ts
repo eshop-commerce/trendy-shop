@@ -23,7 +23,7 @@ for(let user of users){
     from: process.env.EMAIL,
     to: user.Email,
     subject: "Welcome to Eshop",
-    html
+    html: `Hello ${user.Name}, Welcome to Eshop online shopping`
 };
 
 // console.log(html);

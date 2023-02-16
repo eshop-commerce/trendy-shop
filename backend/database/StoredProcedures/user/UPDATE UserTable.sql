@@ -1,3 +1,3 @@
 UPDATE UserTable
-SET Role = 'Admin'
-WHERE Name = 'Admin'
+SET Email = 'fel@gmail.com'
+WHERE Email = 'felixmilgo21@gmail.com'
