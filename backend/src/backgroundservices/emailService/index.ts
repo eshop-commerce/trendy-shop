@@ -18,7 +18,7 @@ const sendWelcomeEmail = async()=>{
     // console.log(users);
 
 for(let user of users){
-    ejs.renderFile('Templates/registration.ejs',{name:user.Name}, async(error, html)=>{
+    ejs.renderFile('templates/registration.ejs',{name:user.Name}, async(error, html)=>{
     const message = {
     from: process.env.EMAIL,
     to: user.Email,
