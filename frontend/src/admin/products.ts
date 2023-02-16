@@ -44,7 +44,7 @@ function showProduct(Product: Products[]) {
         let html=`
         <div class="product__item" id="product">
         <div class="product__item__pic ">
-            <img src="${a.Image_URL}" alt="item">
+        <img src="../assets/shop/shop-7.jpg" alt="item">
             <div class="label new">New</div>
             <ul class="product__hover">
 
