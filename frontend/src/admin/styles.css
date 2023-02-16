@@ -181,9 +181,9 @@
     display: flex;
     flex-direction: column;
 }
-.table{
+/* .table{
     display: flex;
-}
+} */
 .previous-next{
     display: flex;
     width: 100%;
