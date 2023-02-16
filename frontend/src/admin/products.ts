@@ -13,7 +13,7 @@ interface Products{
     Id: string,
     Product_name:string,
     Product_price:string,
-    Category_name: string
+    Category_name: string,
     Image_URL: string
   }
 let Product:Products[]=[]

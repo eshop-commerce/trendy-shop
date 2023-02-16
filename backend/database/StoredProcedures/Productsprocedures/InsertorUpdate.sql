@@ -6,6 +6,7 @@ AS
 BEGIN
 
 
+
 IF EXISTS(SELECT * FROM productsTable WHERE Id =@id)
 BEGIN
 UPDATE productsTable SET Product_name=@Product_name, Product_price=@Product_price,Category_name=@Category_name, Image_URL=@Image_URL
@@ -19,5 +20,9 @@ INSERT INTO productsTable(Id, Product_name, Product_price,Category_name,Image_UR
 VALUES( @id, @Product_name , @Product_price, @Category_name, @Image_URL)
 END
 END
-SELECT * FROM productsTable
-EXEC InsertOrUpdate '25jj79000','Airforce3','777777','Uiiiiiiii','/assests/images/johndoe'
+
+
+-- SELECT * FROM productsTable
+-- EXEC InsertOrUpdate '25jj79000','Airforce3','777777','Uiiiiiiii','/assests/images/johndoe'
+
+-- DROP PROCEDURE InsertOrUpdate
