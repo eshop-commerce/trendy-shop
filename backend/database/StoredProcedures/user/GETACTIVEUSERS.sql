@@ -1,0 +1,6 @@
+CREATE PROCEDURE getActiveUsers
+AS
+BEGIN
+
+	SELECT * FROM UserTable WHERE isDelete = 0 
+END
