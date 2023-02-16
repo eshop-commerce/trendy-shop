@@ -7,6 +7,7 @@ let product_name = document.getElementById("product-name") as HTMLInputElement
 let product_price = document.getElementById("product-price") as HTMLInputElement
 let product_image = document.getElementById("product-image") as HTMLInputElement
 let category = document.getElementById("product-category") as HTMLInputElement
+let closepopup = document.querySelector(".close-popup") as HTMLDivElement
 
 let BaseURL ="http://localhost:4004/products"
 interface Products{
@@ -140,6 +141,12 @@ function postProduct(payload:any){
     }
     fetch(BaseURL,options)
     .then(response=>console.log(response.status));
+}
+
+closepopup.addEventListener("click", closeForm)
+function closeForm(event:any){
+    event.preventDefault();
+    addForm.style.display="none"
 }
 
     

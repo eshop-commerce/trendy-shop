@@ -1,5 +1,5 @@
 let userDiv = document.querySelector('.customers-details') as HTMLDivElement;
-let deleteUser = document.querySelector(".delete-user") as HTMLDivElement
+let deleteUserbtn = document.querySelector(".delete-user") as HTMLDivElement
 console.log(userDiv);
 
 
@@ -43,8 +43,12 @@ function showUser(User:Users[]){
     })
     
 }
-
-deleteUser?.addEventListener("click",(event)=>{
+let options = {
+    method:'DELETE'
+}
+deleteUserbtn?.addEventListener("click",deleteUser)
+function deleteUser(event:any){
     event.preventDefault()
-
-})
+    fetch(UsersURL + "/2fcd54c9-2783-48d4-958b-c20d9e674d48", options)
+    .then((response) => response.json())
+}
