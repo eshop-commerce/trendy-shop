@@ -7,9 +7,9 @@ const router = Router()
 router.get('', getProducts)
 router.get('/wish', getProductsWishlist)
 router.get('/:id', getOneProduct)
-router.post('/', addProduct)
 router.post('/:id', addProductToWishlist)
 router.put('/:id', updateProduct)
 router.delete('/:id', deleteProduct)
+router.post('/', addProduct)
 
 export default router

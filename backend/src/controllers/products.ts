@@ -5,7 +5,7 @@ import { Product } from '../models/products'
 import { DatabaseHelper } from '../databaseHelpers'
 const _db= new DatabaseHelper()
 interface ExtendedRequest extends Request{
-    body:{Product_name:string,Product_price:string,Category_name:string},
+    body:{Product_name:string,Product_price:string,Category_name:string,Image_URL:string},
     params:{id:string}
 }
 //Get Products
@@ -38,10 +38,11 @@ try {
  export async function addProduct( req:ExtendedRequest, res:Response) {
   try {
     const id =uid()
-    const {Product_name,Product_price,Category_name}= req.body
-    if(Product_name && Product_price && Category_name){
+    const {Product_name,Product_price,Category_name,Image_URL}= req.body
+    
+    if(Product_name && Product_price && Category_name && Image_URL){
       _db.exec('InsertOrUpdate', 
-      {id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name})
+      {id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name,Image_URL:Image_URL})
       return  res.status(201).json({message:'Product Added'})
 
     }else{

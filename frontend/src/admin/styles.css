@@ -211,14 +211,15 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 50%;
+    height: 65%;
     width: 40%;
     min-width: 300px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%);
     z-index: 1000;
     background-color: grey;
     padding: 1rem;
     border-radius: 0.5rem;
+    display: none;
 }
 .add-new-product input, select{
     width: 100%;

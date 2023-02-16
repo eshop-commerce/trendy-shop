@@ -96,6 +96,7 @@
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
                 </div>
+                <div><button id="add-update-product">Add/update product</button></div>
             </div>
     
     
@@ -122,12 +123,12 @@
                 </div>
             </div>
 
-            <div id="pro" style="display: block;">
+            <!-- <div id="pro" style="display: block;">
 
-            </div>
+            </div> -->
     
         <div class="items" id="items">
-            <div class="product__item" id="product">
+            <!-- <div class="product__item" id="product">
                 <div class="product__item__pic ">
                     <img src="../assets/shop/shop-1.jpg" alt="item">
                     <div class="label new">New</div>
@@ -140,7 +141,6 @@
                                 </span>
                             </a>
                         </li>
-                        <!-- <li><img src="../assets/shop/shop-1.jpg" alt=""></li> -->
                         <li>
                             <a href="#">
                                 <span class="icon_heart_alt">
@@ -214,8 +214,26 @@
                     <div class="product__price">$ 49.0</div>
                 </div>
     
-            </div>
+            </div> -->
         </div>
+        <form action="" class="add-new-product">
+            <h2>Add a new product</h2>
+            <label for="product-name">Name</label><br>
+            <input type="text" id="product-name"><br>
+            <label for="Price">Price</label><br>
+            <input type="text" id="product-price"><br>
+            <label for="product-image">Product Image</label><br>
+            <input type="text" id="product-image"><br>
+            <label for="product-category">Product category</label><br>
+            <select name="Product category" id="product-category">
+                <option value="Women">Women</option>
+                <option value="Men">Men</option>
+                <option value="Kids">Kids</option>
+            </select>
+            <br>
+            <br>
+            <button class="add-product"> Add Product</button>
+        </form>
     </div>
 
 
