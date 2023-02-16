@@ -46,7 +46,7 @@ try {
       return  res.status(201).json({message:'Product Added'})
 
     }else{
-      return  res.status(400).json({message:'A fields should contain a value'})
+      return  res.status(400).json({message:'All fields should contain a value'})
 
     }
 
@@ -62,11 +62,11 @@ try {
 
 export async function updateProduct(req:ExtendedRequest,res:Response){
 try {
-const {Product_name,Product_price,Category_name}= req.body
+const {Product_name,Product_price,Category_name,Image_URL}= req.body
      const product:Product= await (await _db.exec('getProductsById',{id:req.params.id})).recordset[0]
 
   if(product){
-    await _db.exec('InsertOrUpdate', {id:req.params.id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name})
+    await _db.exec('InsertOrUpdate', {id:req.params.id,Product_name:Product_name, Product_price:Product_price, Category_name:Category_name, Image_URL:Image_URL})
     return res.status(200).json({message:'Updated'})
   }
 
