@@ -1,35 +1,103 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trendy shop</title>
-    <!-- <link rel="stylesheet" href="../homepage/home.css"> -->
-    <!-- <link rel="stylesheet" href="../all.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trendy shop</title>
+        <!-- <link rel="stylesheet" href="../homepage/home.css"> -->
+        <link rel="stylesheet" href="../all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../Orders_Page/styles/styles.css">
     <link rel="stylesheet" href="styles.css">
 
-
-</head>
-
-<body>
-    <div class="container-admin">
-        <div class="side-bar">
-            <div class="top-sidebar">
-                <div>
-                    <h1>Admin</h1>
+    </head>
+    <body>
+        <div class="container-admin">
+            <div class="side-bar" style="height: fit-content;">
+                <div class="top-sidebar">
+                    <div>
+                        <h2 style="color: white;"><b>Admin</b></h2>
+                    </div>
+                    <div>
+                        <h4> <a href="#">Dashboard</a></h4>
+                    </div>
+                    <div>
+                        <h4> <a href="./products.html">Products</a></h4>
+                    </div>
+                    <div>
+                        <h4> <a href="./users.html">Customers</a></h4>
+                    </div>
+                    <div>
+                        <h4> <a href="./orders.html">Orders</a></h4>
+                    </div>
+    
                 </div>
-                <div>
-                    <h3> <a href="#">Dashboard</a></h3>
+    
+                <!-- carousel -->
+                <!-- carousel start -->
+                <div class="container-banner"  id="bancar" style="background-image: url(../assets/banner/banner-1.jpg ); height: 500px; color: black;width: 250px;margin-top: 20px;margin-bottom: 20px;" >
+                    <div class="row" style="top: 50%;">
+                        <div class="immortal"  style="top: 50%;">
+                            <div class="banner__slider owl-carousel" >
+                                <div class="banner__item" id="mySlides" style="display: none;">
+                                    <!-- <img src="../assets/shop/jacket.jpeg" alt="" style="width: 50%; height: 50%;"> -->
+                                    <div class="banner__text" >
+                                        <!-- <span>The Chloe Collection</span> -->
+                                        <h4>New Updates available</h4>
+                                        <a href="#" style="color: blue;">Update now</a>
+                                    </div>
+                                </div>
+                                <div class="banner__item" id="mySlides" style="display: none;">
+                                    <!-- <img src="../assets/shop/computer1.jpeg" alt="" style="width: 40%; height: 40%;"> -->
+                                    <div class="banner__text">
+                                        <!-- <span>The Trendy Collection</span> -->
+                                        <h4>New features are here</h4>
+                                        <a href="#" style="color: blue;">UPgrade Now</a>
+                                    </div>
+                                </div>
+                                <div class="banner__item" id="mySlides" style="display: none;">
+                                    <!-- <img src="../assets/shop/shop-8.jpg" alt="" style="width: 50%; height: 50%;"> -->
+                                    <div class="banner__text">
+                                        <!-- <span>The Trendy Collection</span> -->
+                                        <h4>Secure your website</h4>
+                                        <a href="#" style="color: blue;">Check it out</a>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                            </div>
+                          
+                        </div>
+                        
+                        
+                    </div>
                 </div>
-                <div>
-                    <h3> <a href="./products.html">Products</a></h3>
+                <div class="bottom-sidebar">
+                <h4 style="color: white;">LogOut</h4>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div
+                class="main-content">
+                <!-- top-bar -->
+                <div class="top-bar">
+                    <div class="hello-message">
+                        <h2>Hello, John &#128400;</h2>
+                    </div>
+                    <div class="search-profile-pic">
+                        <div class="search-bar">
+                            <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome">
+                        </div>
+                        <div class="profile-pic">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h3>
@@ -151,8 +219,8 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="../../dist/admin/orders.js"></script>
+        <script src="../../dist/carousel.js"></script>
+    <script src="../../dist/user/shop.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </body>
-
-</html>
