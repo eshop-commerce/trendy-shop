@@ -73,3 +73,43 @@ export async function Homepage(req:ExtendedRequest,res:Response) {
         
     }
 }
+
+
+// /delete user
+
+
+// export const deleteUser=async(req:ExtendedRequest, res:Response)=>{
+//   try {
+//     const {Email} = req.body
+//     await _db.exec('deleteUser', {email:Email})
+//     return res.status(200).json({message: "User deleted"})   
+//  } catch (error:any) {
+//     return res.status(500).json(error.message)
+//  }   
+// }
+
+export const deleteUser=async(req:ExtendedRequest, res:Response)=>{
+  try {
+    const user:User= await (
+    await _db.exec('getUserByEmail',{Email:req.params.Email})
+  ).recordset[0]
+    if(user){
+          await _db.exec('deleteUser',{Email:req.params.Email})
+        return res.status(200).json({message:'User Deleted'})
+    }
+  return res.status(404).json({error:'User Not Found'})  
+  } catch (error:any) {
+    res.status(500).json(error.message)
+  }
+}
+
+//Get Active users
+export const getActiveUsers:RequestHandler=async (req,res)=>{
+    try {
+       const users:User[]= await (await _db.exec('getActiveUsers')).recordset
+      res.status(200).json(users)
+    } catch (error) {
+     res.status(500).json(error)
+    }
+ 
+ }
